@@ -1,5 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function Page({ children }) {
   return (
@@ -18,17 +20,10 @@ function Page({ children }) {
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <nav className="flex justify-center gap-5 p-4 bg-white shadow">
-        <Link to="/" className="text-blue-600 font-semibold">
-          Home
-        </Link>
-        <Link to="/about" className="text-blue-600 font-semibold">
-          About
-        </Link>
-      </nav>
+      <Navbar />
 
       <Routes>
-        <Route path="/" element={<Page>Welcome Home 🏡</Page>} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<Page>About Us 📘</Page>} />
       </Routes>
     </div>

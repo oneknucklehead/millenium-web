@@ -1,1 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @import "tailwindcss";
+
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply font-archivo;
+  }
+} */
+
+@theme {
+  --color-primary: #ff6600;
+  --color-secondary: #1a2b50;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+.font-bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
