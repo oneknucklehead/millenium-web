@@ -44,44 +44,46 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <section className="w-full py-10">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-          <div>
-            <p className="text-sm text-orange-500 font-semibold">
-              Client Testimonials
-            </p>
+    <div className="py-8">
+      <Container className=" px-4 py-10">
+        <section className="w-full py-10">
+          <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+            <div>
+              <p className="text-lg text-primary font-semibold">
+                Client Testimonials
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-          {/* Left Content */}
+          <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6 mt-2">
+            {/* Left Content */}
 
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4 }}
-            className="max-w-xl"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 leading-snug">
-              What Our Clients Say About <br /> Working With Us
-            </h2>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4 }}
+              className="max-w-xl"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+                What Our Clients Say About <br /> Working With Us
+              </h2>
+            </motion.div>
 
-          {/* Right Content */}
-          <motion.p
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="text-gray-600 max-w-md text-sm md:text-base"
-          >
-            Real experiences from businesses we've helped grow through strategic
-            insight and tailored consulting solutions.
-          </motion.p>
+            {/* Right Content */}
+            <motion.p
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="text-gray-600 max-w-md text-sm md:text-base"
+            >
+              Real experiences from businesses we've helped grow through
+              strategic insight and tailored consulting solutions.
+            </motion.p>
+          </div>
+        </section>
+        <div className="">
+          <TestimonialCarousel testimonials={testimonialsData} />
         </div>
-      </section>
-      <div className="">
-        <TestimonialCarousel testimonials={testimonialsData} />
-      </div>
+      </Container>
     </div>
   );
 };

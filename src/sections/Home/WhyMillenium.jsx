@@ -48,11 +48,11 @@ export default function WhyMillenium() {
     <div className="w-full px-4 md:px-10 py-10 bg-white">
       {/* <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center"> */}
       <Container>
-        <p className="text-primary text-xl font-semibold mb-1">
+        <p className="text-primary text-xl font-semibold">
           Why Businesses Love Millenium?
         </p>
       </Container>
-      <Container className="grid md:grid-cols-2 gap-10">
+      <Container className="grid md:grid-cols-2 gap-10 my-4">
         <h2 className="text-2xl md:text-4xl font-semibold text-black mb-4">
           Empowering Businesses <br /> with Proven Solutions
         </h2>

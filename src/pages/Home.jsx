@@ -11,7 +11,7 @@ import WorkingProcess from "../sections/Home/WorkingProcess";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HomeCarousel />
       <Ticker />
       <WhyMillenium />

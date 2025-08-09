@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 const TestimonialsCard = () => {
   return (
     <motion.div
-      className="space-y-5 max-w-sm w-full bg-white rounded-xl p-5 border-[1.5px] border-[#EDEDED]"
+      className="space-y-5 w-full bg-white rounded-xl p-5 border-[1.5px] border-[#EDEDED]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}

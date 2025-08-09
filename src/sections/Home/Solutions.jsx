@@ -3,6 +3,7 @@ import img1 from "../../assets/Images/solutions/1.png";
 import img2 from "../../assets/Images/solutions/2.png";
 import img3 from "../../assets/Images/solutions/3.png";
 import { ArrowRight } from "lucide-react";
+import Container from "../../components/Container";
 
 export default function Solutions() {
   const cardData = [
@@ -27,60 +28,62 @@ export default function Solutions() {
   ];
 
   return (
-    <section className="bg-secondary text-white py-12 px-4 md:px-12">
+    <section className="bg-secondary text-white py-8 px-4 md:px-12">
       {/* Header */}
-      <div className="w-full flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
-        <p className="text-orange-400 uppercase tracking-wide text-sm mb-2">
-          Telecom
-        </p>
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">
-          Telecom Solutions: Connecting Your World
-        </h2>
-        <p className="text-gray-300 mb-6">
-          Millenium Global delivers comprehensive telecom solutions, optimizing
-          your network from infrastructure to operations as your trusted
-          partner.
-        </p>
-        <motion.button
-          //   whileHover={{ scale: 1.05 }}
-          //   whileTap={{ scale: 0.95 }}
-          className="flex items-center gap-2 group cursor-pointer border border-white text-white hover:text-secondary px-5 py-2 rounded-lg font-medium bg-secondary hover:bg-white transition-colors duration-300"
-        >
-          Discover More
-          <span className="bg-white group-hover:bg-secondary text-secondary group-hover:text-white transition-colors duration-300 rounded-full p-1 flex items-center justify-center">
-            <ArrowRight size={16} />
-          </span>
-        </motion.button>
-      </div>
-
-      {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {cardData.map((card, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="relative rounded-2xl overflow-hidden shadow-lg h-[500px] flex flex-col justify-between"
-            style={{
-              backgroundImage: `url("${card.img}")`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
+      <Container className=" px-4 py-10">
+        <div className="w-full flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
+          <p className="text-primary font-semibold tracking-wide text-lg mb-2">
+            Telecom
+          </p>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            Telecom Solutions: Connecting Your World
+          </h2>
+          <p className="text-gray-300 mb-6">
+            Millenium Global delivers comprehensive telecom solutions,
+            optimizing your network from infrastructure to operations as your
+            trusted partner.
+          </p>
+          <motion.button
+            //   whileHover={{ scale: 1.05 }}
+            //   whileTap={{ scale: 0.95 }}
+            className="flex items-center gap-2 group cursor-pointer border border-white text-white hover:text-secondary px-5 py-2 rounded-lg font-medium bg-secondary hover:bg-white transition-colors duration-300"
           >
-            {/* Title */}
-            <div className="bg-white text-black p-4 rounded-xl m-4 shadow-md w-full max-w-[90%]">
-              <h3 className="font-bold text-lg text-center">{card.title}</h3>
-            </div>
+            Discover More
+            <span className="bg-white group-hover:bg-secondary text-secondary group-hover:text-white transition-colors duration-300 rounded-full p-1 flex items-center justify-center">
+              <ArrowRight size={16} />
+            </span>
+          </motion.button>
+        </div>
 
-            {/* Description */}
-            <div className="bg-white text-gray-700 p-4 rounded-xl m-4 shadow-md text-sm max-w-[90%]">
-              {card.description}
-            </div>
-          </motion.div>
-        ))}
-      </div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {cardData.map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="relative rounded-2xl overflow-hidden shadow-lg h-[500px] flex flex-col justify-between"
+              style={{
+                backgroundImage: `url("${card.img}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* Title */}
+              <div className="bg-white text-black p-4 rounded-xl m-4 shadow-md w-full max-w-[90%]">
+                <h3 className="font-bold text-xl">{card.title}</h3>
+              </div>
+
+              {/* Description */}
+              <div className="bg-white text-gray-700 p-4 rounded-xl m-4 shadow-md text-sm max-w-[90%]">
+                {card.description}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </Container>
     </section>
   );
 }
