@@ -29,26 +29,26 @@ export default function Ticker() {
     });
   }, [controls]);
 
-  const handleMouseEnter = () => controls.stop();
-  const handleMouseLeave = () => {
-    controls.start({
-      x: ["0%", "-100%"],
-      transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 20,
-          ease: "linear",
-        },
-      },
-    });
-  };
+  // const handleMouseEnter = () => controls.stop();
+  // const handleMouseLeave = () => {
+  //   controls.start({
+  //     x: ["0%", "-100%"],
+  //     transition: {
+  //       x: {
+  //         repeat: Infinity,
+  //         repeatType: "loop",
+  //         duration: 20,
+  //         ease: "linear",
+  //       },
+  //     },
+  //   });
+  // };
 
   return (
     <div
       className="w-full overflow-hidden bg-[#16254b] py-4"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
     >
       <motion.div
         className="flex whitespace-nowrap gap-8 px-4"

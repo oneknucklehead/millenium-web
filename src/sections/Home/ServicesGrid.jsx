@@ -43,7 +43,7 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <div className="bg-[#16254b] bg-[radial-gradient(circle,#1f2f54,transparent_1px)] text-white py-16 px-4">
+    <div className="bg-secondary text-white py-16 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <p className="text-orange-500 text-sm font-semibold">Our Services</p>
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
@@ -55,10 +55,10 @@ export default function ServicesGrid() {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="bg-white p-5 text-black rounded-xl shadow-md overflow-hidden flex flex-col transition hover:shadow-lg"
-            initial={{ opacity: 0, y: 30 }}
+            className="bg-white p-5 text-black rounded-xl shadow-md overflow-hidden flex flex-col"
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.5 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
             <img

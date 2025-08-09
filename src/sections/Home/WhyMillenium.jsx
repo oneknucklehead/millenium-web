@@ -7,6 +7,8 @@ import {
   Handshake,
 } from "lucide-react";
 import Container from "../../components/Container";
+import team from "../../assets/Images/team.png";
+
 export default function WhyMillenium() {
   const features = [
     "Data-Driven Decision Making",
@@ -70,11 +72,20 @@ export default function WhyMillenium() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <img
-            src="https://images.pexels.com/photos/1181696/pexels-photo-1181696.jpeg"
-            alt="Team"
-            className="rounded-xl border border-white shadow-md w-full max-w-md"
-          />
+          <div className="relative w-fit">
+            {/* Decorative diagonal stripes */}
+            <div className="absolute -bottom-5 -right-5 w-full h-full bg-[repeating-linear-gradient(135deg,_#000_0px,_#000_2px,_transparent_2px,_transparent_6px)]" />
+
+            {/* Main image */}
+            <motion.img
+              src={team}
+              alt={"Team"}
+              className="relative rounded-xl"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            />
+          </div>
         </motion.div>
 
         {/* Right Side */}
@@ -124,9 +135,9 @@ export default function WhyMillenium() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <button className="flex items-center gap-4 border border-secondary text-secondary hover:bg-secondary hover:text-white px-5 py-3 rounded-md transition">
+            <button className="cursor-pointer flex items-center group gap-4 border border-secondary text-secondary hover:bg-secondary hover:text-white px-5 py-3 rounded-md transition duration-300">
               <p>More About Us</p>
-              <span className="text-white bg-secondary rounded-full p-1">
+              <span className="transition duration-300 text-white group-hover:text-secondary bg-secondary group-hover:bg-white rounded-full p-1">
                 <ArrowRight className="w-4 h-4" />
               </span>
             </button>
