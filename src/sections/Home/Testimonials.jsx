@@ -6,39 +6,46 @@ import Container from "../../components/Container";
 
 const testimonialsData = [
   {
-    name: "Priyanka Mukherjee",
-    role: "COO, Horizon Logistics",
+    name: "Ravi Mehta",
+    role: "TCS",
     image: "https://via.placeholder.com/40",
-    text: "Millenium Global brought a fresh perspective to our growth challenges. We saw a 35% increase in operational efficiency within the first quarter.",
+    text: "Millenium’s employee transport fleet transformed our daily operations with punctual pickups, real-time tracking, and top-tier safety compliance.",
     rating: 4.9,
   },
   {
-    name: "Abhijeet Dasani",
-    role: "Director, Finora Capital",
+    name: "Ananya Roy",
+    role: "Bharti Airtel",
     image: "https://via.placeholder.com/40",
-    text: "From strategy to execution, Millenium Global delivered. The UI revamp not only elevated our brand presence but improved our lead conversion.",
+    text: "Their telecom rollout team handled our 5G deployment in record time efficient, reliable, and seamlessly executed across multiple cities.",
     rating: 4.7,
   },
   {
-    name: "Riva Singhania",
-    role: "Founder, Visionary Edge",
+    name: "Deepak Sharma",
+    role: "Teleperformance",
     image: "https://via.placeholder.com/40",
-    text: "They understood our business inside out and crafted solutions that aligned perfectly with our goals.",
+    text: "Millenium’s night cab services are a blessing zero complaints, prompt support, and full compliance across all our BPO shifts.",
+    rating: 5.0,
+  },
+  {
+    name: "Neha Ghosh",
+    role: "Samsung India",
+    image: "https://via.placeholder.com/40",
+    text: "Exceptional handling of telecom infrastructure upgrades BTS, IBS and MW setup done with clean execution and proactive communication throughout.",
+    rating: 4.6,
+  },
+  {
+    name: "Vinod Krishnan",
+    role: "NIIT",
+    image: "https://via.placeholder.com/40",
+    text: "Impressed by their green mobility push our employees love the EV commute, and we’ve reduced costs & emissions significantly.",
     rating: 4.8,
   },
   {
-    name: "Abhijeet Dasani",
-    role: "Director, Finora Capital",
+    name: "Shruti Desai",
+    role: "PWC India",
     image: "https://via.placeholder.com/40",
-    text: "From strategy to execution, Millenium Global delivered. The UI revamp not only elevated our brand presence but improved our lead conversion.",
+    text: "Their MICE event services were professional, creative, and flawlessly organized great experience from logistics to on-site management.",
     rating: 4.7,
-  },
-  {
-    name: "Riva Singhania",
-    role: "Founder, Visionary Edge",
-    image: "https://via.placeholder.com/40",
-    text: "They understood our business inside out and crafted solutions that aligned perfectly with our goals.",
-    rating: 4.8,
   },
 ];
 
@@ -64,7 +71,7 @@ const Testimonials = () => {
               className="max-w-xl"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-                What Our Clients Say About <br /> Working With Us
+                What Our Clients Say About Us
               </h2>
             </motion.div>
 
@@ -75,8 +82,9 @@ const Testimonials = () => {
               transition={{ duration: 0.4, delay: 0.1 }}
               className="text-gray-600 max-w-md text-sm md:text-base"
             >
-              Real experiences from businesses we've helped grow through
-              strategic insight and tailored consulting solutions.
+              Real reviews from India’s leading enterprises who trust Millenium
+              Global for their transport, telecom, and facility management needs
+              nationwide.
             </motion.p>
           </div>
         </section>

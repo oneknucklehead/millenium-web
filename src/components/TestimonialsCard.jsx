@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
-const TestimonialsCard = () => {
+const TestimonialsCard = ({ data }) => {
   return (
     <motion.div
       className="space-y-5 w-full bg-white rounded-xl p-5 border-[1.5px] border-[#EDEDED]"
@@ -19,10 +19,8 @@ const TestimonialsCard = () => {
             className="w-10 h-10 rounded-full object-cover"
           />
           <div>
-            <h4 className="text-sm font-semibold text-gray-900">
-              Abhijeet Dasani
-            </h4>
-            <p className="text-xs text-gray-500">Director, Finora Capital</p>
+            <h4 className="text-sm font-semibold text-gray-900">{data.name}</h4>
+            <p className="text-xs text-gray-500">{data.role}</p>
           </div>
         </div>
         <span className="bg-[#FFF9F5] p-2 rounded-full">
@@ -43,17 +41,14 @@ const TestimonialsCard = () => {
       </div>
 
       {/* Testimonial */}
-      <p className="text-sm text-gray-600 leading-relaxed">
-        From strategy to execution, Millenium Global delivered. The UI revamp
-        not only elevated our brand presence but improved our lead conversion.
-      </p>
+      <p className="text-sm text-gray-600 leading-relaxed">{data.text}</p>
 
       <div className="h-[1px] rounded-full bg-[#DFE3EC]" />
 
       {/* Rating */}
       <div className="flex items-center justify-between">
         <div className="flex space-x-1">
-          {[...Array(5)].map((_, i) => (
+          {[...Array(Math.round(data.rating))].map((_, i) => (
             <svg
               width="24"
               height="24"
@@ -68,7 +63,7 @@ const TestimonialsCard = () => {
             </svg>
           ))}
         </div>
-        <span className="font-semibold">4.7</span>
+        <span className="font-semibold">{data.rating}</span>
       </div>
     </motion.div>
   );

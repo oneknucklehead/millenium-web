@@ -7,20 +7,26 @@ const slides = [
   {
     id: 1,
     image: carouselImg1,
-    heading: "Empowering Your Workforce,",
-    subheading: "One Ride at a Time.",
+    heading: "Smart Corporate Mobility",
+    subheading: "Revolutionizing Employee Transportation.",
   },
   {
     id: 2,
     image: "/carousel-2.jpg",
-    heading: "Sustainable Mobility",
-    subheading: "Driven by Innovation.",
+    heading: " Building India's Future Networks:",
+    subheading: "4G & 5G Rollouts.",
   },
   {
     id: 3,
     image: "/carousel-3.jpg",
-    heading: "Smart Transport Solutions",
-    subheading: "For Modern Enterprises.",
+    heading: "Integrated 3PL & ",
+    subheading: "Reverse Logistics.",
+  },
+  {
+    id: 4,
+    image: "/carousel-4.jpg",
+    heading: "Full-Service Event Production:",
+    subheading: "From Concept to Grand Finale.",
   },
 ];
 

@@ -32,12 +32,12 @@ export default function Clients() {
             Our Clients
           </p>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Trusted by Biggest Global Companies
+            Trusted by Industry Leaders Across India
           </h2>
           <p className="text-gray-600">
-            We had the opportunity to collaborate with the most diverse and
-            forward-thinking global companies and help them bring their vision
-            to life.
+            From top telecom giants to global corporates, Millenium Global is
+            the chosen partner for infrastructure, transport, logistics, and
+            facility management across Delhi NCR, Mumbai, Kolkata, and beyond.
           </p>
         </div>
 

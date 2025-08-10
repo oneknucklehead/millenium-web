@@ -4,40 +4,40 @@ import Container from "../../components/Container";
 
 const services = [
   {
-    title: "Logistics Services",
+    title: "Telecom Solutions",
     description:
-      "Identify, assess, and mitigate potential risks to secure sustainable business growth.",
+      "Comprehensive 4G/5G network rollout and optimization services across Pan‑India regions.",
     image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
   },
   {
-    title: "HR Consultancy",
+    title: "Employee Transport",
     description:
-      "Scale your business with data-driven strategies and expert consulting support.",
+      "Automated EV‑powered employee transport solutions ensuring safety and efficiency nationwide.",
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
   },
   {
-    title: "Corporate Event Management",
+    title: "3PL Logistics",
     description:
-      "Receive expert guidance on corporate governance, restructuring, and compliance.",
+      "End‑to‑end 3PL logistics, first/last‑mile and reverse operations across Pan‑India hubs.",
     image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
   },
   // Duplicating to match 6 cards like in the image
   {
-    title: "Logistics Services",
+    title: "Facility Management",
     description:
-      "Identify, assess, and mitigate potential risks to secure sustainable business growth.",
+      "Integrated facility management services including soft, security, and support nationwide.",
     image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
   },
   {
-    title: "HR Consultancy",
+    title: " Event Management",
     description:
-      "Scale your business with data-driven strategies and expert consulting support.",
+      "Full‑spectrum MICE and corporate event management services with turnkey execution.",
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
   },
   {
-    title: "Corporate Event Management",
+    title: "HR Recruitment",
     description:
-      "Receive expert guidance on corporate governance, restructuring, and compliance.",
+      "Specialized telecom recruitment, RPO services driving talent acquisition across India.",
     image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
   },
 ];

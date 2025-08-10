@@ -17,8 +17,6 @@ const Home = () => {
       <WhyMillenium />
       <ServicesGrid />
       <WorkingProcess />
-
-      {/* ADD WORKING PROCESS HERE */}
       <Solutions />
       <Clients />
       <Testimonials />

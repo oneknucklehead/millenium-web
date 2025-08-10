@@ -4,6 +4,7 @@ import img2 from "../../assets/Images/solutions/2.png";
 import img3 from "../../assets/Images/solutions/3.png";
 import { ArrowRight } from "lucide-react";
 import Container from "../../components/Container";
+import { Link } from "react-router-dom";
 
 export default function Solutions() {
   const cardData = [
@@ -14,16 +15,16 @@ export default function Solutions() {
         "Our end-to-end network rollout services, including 4G/5G deployments, BTS installation, MW, IBS, Small Cell, UBR, and B2B enterprise work, ensure efficient project completion.",
     },
     {
-      title: "Network Optimization & Performance",
+      title: "Network Optimization & Performance.",
       img: img2,
       description:
-        "Enhance your network’s efficiency with our Radio Frequency Engineering, Drive Test, and Network Optimization services. We ensure your systems perform at their peak for superior user experience.",
+        "Enhance your network's efficiency with our Radio Frequency Engineering, Drive Test, and Network Optimization services. We ensure your systems perform at their peak for superior user experience.",
     },
     {
       title: "Telecom Infrastructure Solutions",
       img: img3,
       description:
-        "We deliver comprehensive solutions for active and passive telecom infrastructures, including expert civil works services, meticulous site acquisition, and ongoing support for network setup.",
+        "We deliver comprehensive solutions for active and passive telecom infrastructure, including expert civil work services, meticulous site acquisition, and ongoing support for network setup.",
     },
   ];
 
@@ -43,7 +44,8 @@ export default function Solutions() {
             optimizing your network from infrastructure to operations as your
             trusted partner.
           </p>
-          <motion.button
+          <Link
+            to={"/services/telecom"}
             //   whileHover={{ scale: 1.05 }}
             //   whileTap={{ scale: 0.95 }}
             className="flex items-center gap-2 group cursor-pointer border border-white text-white hover:text-secondary px-5 py-2 rounded-lg font-medium bg-secondary hover:bg-white transition-colors duration-300"
@@ -52,7 +54,7 @@ export default function Solutions() {
             <span className="bg-white group-hover:bg-secondary text-secondary group-hover:text-white transition-colors duration-300 rounded-full p-1 flex items-center justify-center">
               <ArrowRight size={16} />
             </span>
-          </motion.button>
+          </Link>
         </div>
 
         {/* Cards */}

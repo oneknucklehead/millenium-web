@@ -11,28 +11,28 @@ import Container from "../../components/Container";
 
 const steps = [
   {
-    id: "STEP 01",
+    id: "STEP 1",
     img: img1,
-    title: "Discovery Call",
-    desc: "Understand your goals and market to build a strong foundation.",
+    title: "Request Quote",
+    desc: "Submit requirements, receive tailored corporate transport quotation in 24 hours.",
   },
   {
-    id: "STEP 02",
+    id: "STEP 2",
     img: img2,
-    title: "Requirement Quotation",
-    desc: "Craft a clear roadmap and implement strategies efficiently.",
+    title: "Route Planning",
+    desc: "AI-driven route mapping optimized for time, safety, and cost efficiency.",
   },
   {
-    id: "STEP 03",
+    id: "STEP 3",
     img: img3,
-    title: "Cabs at your service",
-    desc: "We deliver consistent support for your ongoing business success.",
+    title: "Fleet Allocation",
+    desc: "Assign dedicated EV cab fleet per passenger volume and compliance.",
   },
   {
-    id: "STEP 04",
+    id: "STEP 4",
     img: img4,
-    title: "Payment",
-    desc: "Monitor results and improve strategies for better performance.",
+    title: " Payment & Launch",
+    desc: "Activate corporate transport service with 24×7 support and real-time tracking.",
   },
 ];
 
@@ -46,14 +46,13 @@ export default function WorkingProcess() {
             Working Process
           </p>
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Simple 4 Step Process to get <br className="hidden md:block" />
-            Dedicated Cab Fleet
+            Corporate Transport: <br className="hidden md:block" />
+            4-Step Dedicated Cab Fleet Setup
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            We follow a well-structured, results-driven process to ensure
-            seamless execution and outstanding outcomes. From in-depth research
-            to final implementation, every step is designed to drive business
-            success.
+            Experience hassle-free employee commute with our AI-optimized,
+            EV-powered dedicated cab fleet—serving Delhi NCR, Mumbai, Kolkata,
+            Chennai and Pan-India locations.
           </p>
         </div>
         {/* STEP OWN */}

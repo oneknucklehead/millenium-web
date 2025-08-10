@@ -8,39 +8,44 @@ import {
 } from "lucide-react";
 import Container from "../../components/Container";
 import team from "../../assets/Images/team.png";
+import { Link } from "react-router-dom";
 
 export default function WhyMillenium() {
   const features = [
-    "Data-Driven Decision Making",
-    "Tailored Business Solutions",
-    "Global Consulting Services",
     "Client-Centric Approach",
+    "Innovation-Driven Solutions",
+    "Pan-India Expertise",
+    "24x7 Expert Support",
   ];
 
   const cards = [
     {
       id: 1,
-      percent: "42%",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      color: "bg-orange-500",
+      numbers: "10+",
+      title: "Years",
+      text: " Industry leadership since 2014 across Delhi NCR, Mumbai, Kolkata, Chennai & beyond.",
+      color: "bg-primary",
     },
     {
       id: 2,
-      percent: "42%",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      color: "bg-[#16254b]",
+      numbers: "3,682+",
+      title: "Sites",
+      text: " End‑to‑end 4G/5G rollout, RF optimization & turnkey network projects.",
+      color: "bg-secondary",
     },
     {
       id: 3,
-      percent: "42%",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      color: "bg-orange-500",
+      numbers: "2,500+",
+      title: "Daily Commutes",
+      text: " Tech‑driven, EV‑powered employee transport with real‑time tracking & on‑time performance.",
+      color: "bg-primary",
     },
     {
       id: 4,
-      percent: "42%",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      color: "bg-[#16254b]",
+      numbers: "500+",
+      title: "EV Fleet Vehicles",
+      text: "Green mobility solutions delivering cost savings, safety & Net Zero alignment.",
+      color: "bg-secondary",
     },
   ];
 
@@ -56,12 +61,18 @@ export default function WhyMillenium() {
         <h2 className="text-2xl md:text-4xl font-semibold text-black mb-4">
           Empowering Businesses <br /> with Proven Solutions
         </h2>
-        <p className="text-[#666666] font-medium text-sm md:text-base">
-          Through continuous innovation, they strive to exceed client
-          expectations by understanding their businesses and delivering
-          high-quality services. For the hospitality division, their vision is
-          to be the most loved organization in MICE management and corporate
-          communication.
+        <p className="text-[#666666] font-medium text-sm">
+          Delivering pan‑India telecom infrastructure, automated employee
+          transport, 3PL logistics and facility management with 10+ years of
+          industry leadership, cutting‑edge technology and unwavering
+          compliance.
+          <br />
+          <br />
+          For over a decade, Millenium Global has been the trusted catalyst for
+          business growth across India. We combine deep industry expertise with
+          an unwavering commitment to innovation, delivering integrated,
+          high-performance solutions in telecom, logistics, events, and facility
+          management that consistently exceed expectations.
         </p>
       </Container>
       <Container className="grid md:grid-cols-2 gap-10 h-fit">
@@ -109,9 +120,12 @@ export default function WhyMillenium() {
               >
                 <Handshake className="w-5 h-5" />
                 <div>
-                  <h3 className="text-3xl md:text-5xl font-bebas">
-                    {card.percent}
-                  </h3>
+                  <div className="mb-2">
+                    <h3 className="text-3xl md:text-5xl font-bebas">
+                      {card.numbers}
+                    </h3>
+                    <p className="text-base font-bebas">{card.title}</p>
+                  </div>
                   <p className="text-xs">{card.text}</p>
                 </div>
               </motion.div>
@@ -135,12 +149,15 @@ export default function WhyMillenium() {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <button className="cursor-pointer flex items-center group gap-4 border border-secondary text-secondary hover:bg-secondary hover:text-white px-5 py-3 rounded-md transition duration-300">
+            <Link
+              to={"/about"}
+              className="cursor-pointer flex items-center group gap-4 border border-secondary text-secondary hover:bg-secondary hover:text-white px-5 py-3 rounded-md transition duration-300"
+            >
               <p>More About Us</p>
               <span className="transition duration-300 text-white group-hover:text-secondary bg-secondary group-hover:bg-white rounded-full p-1">
                 <ArrowRight className="w-4 h-4" />
               </span>
-            </button>
+            </Link>
             <div className="flex items-center gap-2">
               {/* <PhoneCall className="text-primary w-4 h-4" /> */}
               <span className="bg-[#FFF9F5] rounded-full p-2">
