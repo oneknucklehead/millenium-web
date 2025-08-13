@@ -6,7 +6,6 @@ import ServicesGrid from "../sections/Home/ServicesGrid";
 import Solutions from "../sections/Home/Solutions";
 import Clients from "../sections/Home/Clients";
 import Testimonials from "../sections/Home/Testimonials";
-import Footer from "../components/Footer";
 import WorkingProcess from "../sections/Home/WorkingProcess";
 
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
       <Solutions />
       <Clients />
       <Testimonials />
-      <Footer />
     </div>
   );
 };

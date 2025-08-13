@@ -38,7 +38,9 @@ export default function Navbar() {
       <Container className="p-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <img src={logo} alt="Millenium" className="h-12" />
+          <Link to="/" className="">
+            <img src={logo} alt="Millenium" className="h-12" />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 text-base">
@@ -55,7 +57,7 @@ export default function Navbar() {
 
           {/* Contact Button */}
           <Link to="/contact" className="hidden md:inline-block">
-            <button className="flex gap-2 bg-primary cursor-pointer text-white px-5 py-3 rounded-full text-base hover:bg-primary transition">
+            <button className="flex items-center gap-2 bg-primary cursor-pointer text-white px-5 py-3 rounded-full text-base hover:bg-primary transition">
               <p>Contact Us</p>
               <span>
                 <ArrowRight className="text-primary h-5 w-5 bg-white rounded-full" />

@@ -2,6 +2,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Footer from "./components/Footer";
 
 function Page({ children }) {
   return (
@@ -24,8 +26,9 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Page>About Us 📘</Page>} />
+        <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
