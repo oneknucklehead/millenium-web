@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Services from "./pages/Services/Services";
 import Telecom from "./pages/Services/Service/Telecom";
+import About from "./pages/About";
 
 function Page({ children }) {
   return (
@@ -27,6 +28,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/telecom" element={<Telecom />} />
       </Routes>
