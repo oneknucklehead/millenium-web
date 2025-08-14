@@ -2,16 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { Asterisk } from "lucide-react";
 
-const services = [
-  "Employee Transportation",
-  "Corporate Car Rental",
-  "Logistics Services",
-  "Workspace Management",
-  "HR Consultancy",
-  "Telecom Infrastructure",
-];
-
-export default function Ticker() {
+export default function Ticker({ services }) {
   const controls = useAnimation();
   const tickerRef = useRef(null);
 

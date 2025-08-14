@@ -1,6 +1,6 @@
 import React from "react";
-import ServiceCard from "../sections/Services/ServiceCard";
-import Container from "../components/Container";
+import ServiceCard from "../../sections/Services/ServiceCard";
+import Container from "../../components/Container";
 
 const cardData = [
   {

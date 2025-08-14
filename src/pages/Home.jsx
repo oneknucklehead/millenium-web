@@ -7,12 +7,19 @@ import Solutions from "../sections/Home/Solutions";
 import Clients from "../sections/Home/Clients";
 import Testimonials from "../sections/Home/Testimonials";
 import WorkingProcess from "../sections/Home/WorkingProcess";
-
+const services = [
+  "Employee Transportation",
+  "Corporate Car Rental",
+  "Logistics Services",
+  "Workspace Management",
+  "HR Consultancy",
+  "Telecom Infrastructure",
+];
 const Home = () => {
   return (
     <div className="overflow-hidden">
       <HomeCarousel />
-      <Ticker />
+      <Ticker services={services} />
       <WhyMillenium />
       <ServicesGrid />
       <WorkingProcess />
