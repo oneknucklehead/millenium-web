@@ -16,80 +16,75 @@ import Ticker from "../../../components/Ticker";
 const steps = [
   {
     step: "Step - 1",
-    title: "Survey & Planning",
+    title: "Needs Assessment:",
     description:
-      "Our process begins with comprehensive surveys, including LOS, IBS, and civil assessments. We meticulously plan site feasibility, allocate resources, and establish a clear timeline to lay a solid foundation for your project.",
+      "We begin by defining the specifics of your cargo, including type, handling requirements, and compliance needs, as well as mapping out the most efficient delivery routes.",
   },
   {
     step: "Step - 2",
-    title: "Project Mobilization",
+    title: "Route & Fleet Planning:",
     description:
-      "Once the plan is set, we mobilize all necessary resources. This phase includes securing regulatory permissions, procuring materials, setting up local vendor partnerships, and finalizing the detailed deployment plan for seamless execution.",
+      "Our logistics team strategically allocates the right vehicles and trained drivers for each shipment, using GPS-enabled tracking to optimize routes and provide real-time updates.",
   },
   {
     step: "Step - 3",
-    title: "Execution & Commissioning",
+    title: "Secure Handling & Transport:",
     description:
-      "Our expert teams then carry out the physical work, from civil construction to equipment installation, ensuring every component functions flawlessly.",
+      "We execute the loading, transit, and unloading of goods with the utmost care and security. Clients receive real-time status updates throughout the entire journey.",
   },
   {
     step: "Step - 4",
-    title: "Quality Assurance",
+    title: "Delivery & Documentation:",
     description:
-      "Every phase undergoes rigorous checks to ensure top-notch quality and compliance with industry standards.",
-  },
-  {
-    step: "Step - 5",
-    title: "Handover & Support",
-    description:
-      "We provide complete documentation, training, and ongoing support after project delivery.",
+      " We ensure on-time arrival at the destination, with a strict process for client verification. All shipments are accompanied by complete documentation, ensuring audit readiness and transparency.",
   },
 ];
 const data = [
   {
-    title: "Ericsson rollouts & optimizations:",
+    title: "Telecom and Special Project:",
     description:
-      "Thousands of cell installations and optimization packages completed (All-Cell rollout counts listed in our program data).",
+      "Logistics support for nationwide 4G/5G network rollouts and major corporate projects.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Nokia deployments:",
+    title: "Numbers Prove itself:",
     description:
-      "High-volume 4G/5G TDD/FDD rollout projects and optimization engagements across multiple circles.",
+      " Thousands of first-mile, last-mile, and reverse logistics trips completed annually.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
   {
-    title: "Samsung & OEM work",
+    title: "Ensuring Smooth Operations:",
     description:
-      "Triband / pentaband swaps, upgrades and large scale installations with strict QA regimes.",
+      "Strategic hubs in North, East, West, and North-East India for regional efficiency.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Logistics footprint:",
+    title: "Experienced Handling:",
     description:
-      "Thousands of forward & reverse logistics movements and VSAT dismantles managed with regional hubs and tracked execution.",
+      " Handling high-value telecom and IT equipment with zero damage incidents in multiple projects.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
 ];
 
 const features = [
-  "Pan-India Multi-Vendor Rollout Expertise",
-  "Strong Operator & OEM Partnerships",
-  "In-House Logistics & Field Workforce",
-  "100% Safety and Compliance Assurance",
+  " Pan-India Project Logistics Expertise",
+  "Large Fleet & Regional Warehousing",
+  "Trained & Safety-Certified Drivers",
+  " Full Compliance & Real-Time Tracking",
 ];
 
 const ticker = [
-  "Network Rollout & Implementation",
-  "Network Optimization & RF Engineering",
-  "Telecom Infrastructure Solutions",
-  "Managed Services, O&M & NOC Support",
+  "First-Mile & Last-Mile Delivery",
+  "Reverse Logistics & Asset Retrieval",
+  "Scalable Warehousing Solutions",
+  "Yard Management",
 ];
-export default function Telecom() {
+
+export default function Logistics() {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -118,10 +113,10 @@ export default function Telecom() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl lg:text-5xl font-bold text-secondary">
-              Telecom Solutions Across India
+              3PL & Logistics Services
             </h1>
             <h4 className="text-lg lg:text-2xl text-primary font-semibold mt-2">
-              End-to-End Network Rollout, Optimization & O&M Across India
+              Seamless Telecom Supply Chain Solutions
             </h4>
 
             <Link
@@ -146,27 +141,29 @@ export default function Telecom() {
             className=" text-sm md:text-base text-gray-600 space-y-4 leading-relaxed"
           >
             <p>
-              At Millenium Global, we are at the forefront of India's
-              telecommunications revolution. We provide end-to-end, integrated
-              telecom solutions designed to build, optimize, and maintain robust
-              network infrastructures. Millenium Global delivers full-spectrum
-              telecom solutions, from planning and site acquisition to 4G/5G
-              rollout, RF optimization.
+              Millenium Global offers comprehensive Third-Party Logistics (3PL)
+              services, specializing in the complex demands of the telecom
+              industry. From forward and reverse logistics for partners like
+              Samsung and Jio Infocom to end-to-end supply chain management, our
+              scalable solutions optimize every step of the process. With a
+              strong presence in regions like Assam, North East India, and
+              Kolkata, we ensure timely, secure, and cost-effective delivery of
+              goods, empowering your business to focus on core operations. From
+              first-mile and last-mile deliveries to reverse logistics,
+              warehousing, and fleet management, we handle every stage of the
+              supply chain with speed, compliance, and care.
             </p>
             <p>
-              From cutting-edge 4G/5G deployments in Delhi NCR and Mumbai to
-              critical network management across Kolkata and Chennai, we are the
-              trusted partner for leading telecom operators and ISPs seeking
-              efficiency, scalability, and technical excellence nationwide.
-              We’ve executed thousands of rollout and optimization packages for
-              leading operators and OEM partners, demonstrating deep field
-              capability and robust logistics support.
+              Millenium Global delivers end-to-end 3PL and logistics services
+              that keep telecom, IT, and enterprise projects running smoothly
+              across Delhi NCR, Mumbai, Kolkata, Guwahati, and Pan-India. Our
+              integrated model ensures on-time, damage-free deliveries even in
+              challenging terrains and remote project sites.
             </p>
           </motion.div>
         </div>
       </Container>
       <Ticker services={ticker} />
-
       <Container className="px-4 md:px-10 py-12 overflow-hidden">
         {/* SECTION 2 */}
 
@@ -181,7 +178,7 @@ export default function Telecom() {
               What We Offer
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              Core Telecom Capabilities
+              Core Logistics Capabilities
             </h3>
           </motion.div>
 
@@ -192,10 +189,11 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              We break complex telecom programs into manageable, high-quality
-              deliverables. Each capability below is designed to reduce
-              time-to-market, improve KPIs, and secure operational continuity
-              across metros and remote regions.
+              We design custom logistics solutions to meet the specialized needs
+              of telecom operators, OEMs, corporates, and industrial hubs.From
+              first-mile and last-mile deliveries to reverse logistics,
+              warehousing, and fleet management, we handle every stage of the
+              supply chain with speed, compliance, and care.
             </p>
           </motion.div>
         </div>
@@ -203,12 +201,12 @@ export default function Telecom() {
           {/* Left Column */}
           <div className="grid grid-rows-2 justify-between gap-8 h-full">
             <InfoCard
-              title="Network Rollout & Implementation:"
-              description="We deliver comprehensive network rollout services, including 4G/5G deployments, BTS equipment installation, and microwave (MW) installation. Our expertise extends to Indoor Building Solutions(IBS), Small Cell, UBR, and B2B enterprise work, ensuring projects are completed efficiently and on schedule across India. Comprehensive BTS/NodeB/eNodeB installations, small-cell and UBR deployments, delivered with end-to-end project management and safety governance. We manage civil works, mast/tower work, and final acceptance testing for multi-site rollouts."
+              title="Forward & Reverse Logistics:"
+              description="We provide seamless forward and reverse logistics for telecom goods. Our services include delivering equipment from your warehouse to installation sites as well as efficiently managing returns and faulty items back from sites, ensuring a streamlined and transparent process."
             />
             <InfoCard
-              title="Network Optimization & RF Engineering:"
-              description="Enhance your network's efficiency and user experience with our specialized services. Our team provides expert Radio Frequency(RF) Engineering, Drive-test based RF optimization, SCFT/SSCVT/CLOT methodologies, capacity tuning and inter-site coordination to maximize spectral efficiency and QoE and advanced network optimization solutions to ensure your systems perform at their peak, supporting peak-hour traffic and seamless connectivity. Our RF teams perform systematic performance audits and corrective actions to improve call/drop rates, throughput, and coverage continuity."
+              title="First-Mile & Last-Mile Delivery:"
+              description="Seamless pickup and delivery of critical project materials, network equipment, and corporate goods across metros, Tier-2, and remote locations. Our GPS-tracked vehicles and skilled handlers ensure each delivery is secure, on-time, and fully documented."
             />
           </div>
 
@@ -239,25 +237,11 @@ export default function Telecom() {
         {/* SECTION 3 */}
         <div className="my-12">
           <InfoCard
-            title={"Telecom Infrastructure Solutions (Active & Passive)"}
+            title={"Reverse Logistics & Asset Retrieval:"}
             description={
-              "We manage all aspects of telecom infrastructure, both active and passive, Turnkey active and passive infrastructure delivery including power, grounding, BTS shelters, passive cabling, civil foundations, and solar/UPS integration.This includes professional civil work services, meticulous site acquisition, and ongoing support for network setup and expansion. We provide the foundational support needed for a stable and scalable telecommunication network. We handle site acquisition, permissions, and vendor coordination for rapid site readiness."
+              "Efficient collection, dismantling, and safe return of telecom and IT assets  including VSAT units, active network gear, and passive infrastructure. We manage every retrieval with damage prevention protocols and compliance-driven inventory control."
             }
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
-            <InfoCard
-              title={"Testing, Commissioning & Acceptance"}
-              description={
-                "LOS/IBS surveys, site validation, acceptance testing, and post-commissioning QA. We execute acceptance tests for BTS/MW/TXN equipment and provide detailed test reports to meet OEM and operator SLAs."
-              }
-            />
-            <InfoCard
-              title={"Field Logistics & Reverse/Forward Logistics"}
-              description={
-                "End-to-end logistics for telecom assets, warehouse handling, first-mile and last-mile deliveries, site returns, and VSAT dismantling, backed by dedicated vehicles and regional hubs for timely, accountable field support."
-              }
-            />
-          </div>
         </div>
         {/* SECTION 4 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -287,19 +271,23 @@ export default function Telecom() {
           {/* Right Column */}
           <div className="grid grid-rows-2 gap-8 h-full">
             <InfoCard
-              title="Managed Services, O&M & NOC Support"
-              description="Ensure continuous network uptime and reliability with our Operations & Maintenance (O&M) services. 24×7 operations & maintenance, equipment health monitoring, preventive maintenance, fault restoration, and NOC services for sustained network performance. Our managed services include spare management, escalation processes, and SLA reporting. Our team provides round-the-clock, total care for your communication systems, from routine maintenance to emergency support, giving you peace of mind and operational stability."
+              title={"Warehousing & Yard Management:"}
+              description={
+                "Secure, strategically located warehouses and yards for short-term and long-term storage, asset staging, and regional distribution. Each site is monitored 24×7 with digital inventory systems for real-time stock visibility. This agility helps reduce shipping zones and lower costs, ensuring your products reach customers more quickly."
+              }
             />
             <InfoCard
-              title="Telecom HR & Recruitment"
-              description="Build a high-performing team with our specialized HR solutions. We source and place qualified professionals for a wide range of telecom projects, from field engineers to technical project managers, helping you build the expert workforce needed to drive your initiatives forward."
+              title={"Specialized Project Logistics:"}
+              description={
+                "Custom solutions for telecom rollouts, large-scale event setups, and corporate relocations including coordinated deliveries, on-site equipment handling, and emergency dispatches. Our dedicated project teams align logistics with your operational timelines for flawless execution."
+              }
             />
           </div>
         </div>
       </Container>
       <ScrollSlide
         description={
-          "We follow a disciplined, safety-first delivery methodology structured and transparent process that scales from single-site jobs to nationwide programs to ensure every telecom project is a success."
+          "Our process is designed for precision and reliability, ensuring a smooth supply chain from start to finish. We manage logistics like a mission-critical operation: "
         }
         steps={steps}
       />
@@ -315,7 +303,7 @@ export default function Telecom() {
               Why Choose Millenium
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              for Telecom Projects
+              for Logistics
             </h3>
           </motion.div>
 
@@ -326,11 +314,12 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              Over a decade of proven experience delivering successful telecom
-              projects across India for top-tier clients like Samsung and Jio.
-              We maintain 100% compliance with industry regulations and a
-              relentless focus on quality, ensuring reliable, high-performance
-              network delivery.
+              With years of hands-on experience in managing complex, high-volume
+              logistics operations, Millenium Global has supported nationwide
+              telecom rollouts, corporate relocations, and critical event
+              deployments. Our track record reflects zero-compromise safety
+              standards, timely deliveries, and a client-first approach that has
+              earned the trust of industry leaders across multiple sectors.
             </p>
           </motion.div>
         </div>
@@ -379,22 +368,20 @@ export default function Telecom() {
         >
           {/* Heading */}
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Ready to <span className="text-black">Scale Your Network?</span>
+            Ready to{" "}
+            <span className="text-black"> streamline your supply chain?</span>
           </h2>
 
           {/* Paragraph */}
           <p className="max-w-3xl mx-auto text-sm md:text-base mb-4">
-            Whether you’re building new 4G/5G capacity, optimizing live
-            performance, or outsourcing O&M and logistics,
-            <span className="font-semibold"> Millenium Global</span> provides
-            the field expertise, regional reach and operational rigor to deliver
-            on time and on spec.
+            From telecom network deployments to corporate supply chain needs,{" "}
+            <span className="font-semibold">Millenium Global’s</span> logistics
+            division delivers speed, security, and scalability you can count on.
           </p>
 
           <p className="max-w-2xl mx-auto text-sm md:text-base mb-6">
-            Request a proposal or schedule a technical call with our Telecom
-            Delivery team to discuss scope, timelines, and a tailored commercial
-            plan.
+            Request a logistics proposal or schedule a supply chain consultation
+            today.
           </p>
 
           {/* Button */}

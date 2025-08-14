@@ -13,83 +13,79 @@ import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
 import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
 import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
 import Ticker from "../../../components/Ticker";
+
 const steps = [
   {
     step: "Step - 1",
-    title: "Survey & Planning",
+    title: " Conceptualization & Consultation:",
     description:
-      "Our process begins with comprehensive surveys, including LOS, IBS, and civil assessments. We meticulously plan site feasibility, allocate resources, and establish a clear timeline to lay a solid foundation for your project.",
+      "We start by collaborating with you to understand your event goals, audience, and vision. We then develop a unique concept and detailed plan that aligns with your brand and objectives.",
   },
   {
     step: "Step - 2",
-    title: "Project Mobilization",
+    title: "Strategic Planning & Logistics:",
     description:
-      "Once the plan is set, we mobilize all necessary resources. This phase includes securing regulatory permissions, procuring materials, setting up local vendor partnerships, and finalizing the detailed deployment plan for seamless execution.",
+      "Our team meticulously plans every logistical detail, including venue sourcing, travel arrangements, sound and lighting, and on-ground coordination.",
   },
   {
     step: "Step - 3",
-    title: "Execution & Commissioning",
+    title: "Creative Design & Production:",
     description:
-      "Our expert teams then carry out the physical work, from civil construction to equipment installation, ensuring every component functions flawlessly.",
+      "We produce all creative elements for your event, from stage design and exhibition stalls to branding and communication materials, ensuring a cohesive and impactful experience.",
   },
   {
     step: "Step - 4",
-    title: "Quality Assurance",
+    title: "Flawless Execution:",
     description:
-      "Every phase undergoes rigorous checks to ensure top-notch quality and compliance with industry standards.",
-  },
-  {
-    step: "Step - 5",
-    title: "Handover & Support",
-    description:
-      "We provide complete documentation, training, and ongoing support after project delivery.",
+      "Our expert team is on-site to manage and execute the event flawlessly. We handle all coordination and unexpected challenges, allowing you to relax and enjoy the magnificent event.",
   },
 ];
+
 const data = [
   {
-    title: "Ericsson rollouts & optimizations:",
+    title: "Bose India Product Launch:",
     description:
-      "Thousands of cell installations and optimization packages completed (All-Cell rollout counts listed in our program data).",
+      "Full-scale media & dealer event with AV integration in Delhi.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Nokia deployments:",
+    title: "Deloitte India Townhall:",
     description:
-      "High-volume 4G/5G TDD/FDD rollout projects and optimization engagements across multiple circles.",
+      "Managed 2,500+ attendee conference in Mumbai with stage, AV, and logistics.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
   {
-    title: "Samsung & OEM work",
-    description:
-      "Triband / pentaband swaps, upgrades and large scale installations with strict QA regimes.",
+    title: "Hewlett Packard (HP) Sales Kickoff:",
+    description: "4-day international incentive trip to Phuket, Thailand.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Logistics footprint:",
+    title: "Panasonic Media Launch:",
     description:
-      "Thousands of forward & reverse logistics movements and VSAT dismantles managed with regional hubs and tracked execution.",
+      "Concept-to-execution brand launch with curated guest experience.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
 ];
 
 const features = [
-  "Pan-India Multi-Vendor Rollout Expertise",
-  "Strong Operator & OEM Partnerships",
-  "In-House Logistics & Field Workforce",
-  "100% Safety and Compliance Assurance",
+  "Pan-India & International Execution Capabilities",
+  "In-House Creative, Production & Logistics Teams",
+  "Strong Hotel & Venue Partnerships for best rates and locations",
+  "Proven Expertise Across Corporate & Lifestyle Events",
 ];
 
 const ticker = [
-  "Network Rollout & Implementation",
-  "Network Optimization & RF Engineering",
-  "Telecom Infrastructure Solutions",
-  "Managed Services, O&M & NOC Support",
+  "Corporate Events & MICE Solutions",
+  "Full 360° Event Setup & Design",
+  "Exhibitions & Trade Shows",
+  "Brand Activations & BTL Campaigns",
 ];
-export default function Telecom() {
+
+export default function Events() {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -118,10 +114,10 @@ export default function Telecom() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl lg:text-5xl font-bold text-secondary">
-              Telecom Solutions Across India
+              Events & MICE Management
             </h1>
             <h4 className="text-lg lg:text-2xl text-primary font-semibold mt-2">
-              End-to-End Network Rollout, Optimization & O&M Across India
+              Crafting Experiences That Inspire, Engage & Deliver Results
             </h4>
 
             <Link
@@ -146,27 +142,25 @@ export default function Telecom() {
             className=" text-sm md:text-base text-gray-600 space-y-4 leading-relaxed"
           >
             <p>
-              At Millenium Global, we are at the forefront of India's
-              telecommunications revolution. We provide end-to-end, integrated
-              telecom solutions designed to build, optimize, and maintain robust
-              network infrastructures. Millenium Global delivers full-spectrum
-              telecom solutions, from planning and site acquisition to 4G/5G
-              rollout, RF optimization.
+              As the hospitality and events arm of Millenium Global, Millenium
+              Leisure Hospitality Services Pvt. Ltd. delivers end-to-end event
+              management, MICE solutions, and experiential marketing for
+              corporates across India and abroad. We combine creative vision,
+              logistical precision, and technical expertise to design
+              unforgettable experiences from high-energy product launches to
+              exclusive incentive trips.
             </p>
             <p>
-              From cutting-edge 4G/5G deployments in Delhi NCR and Mumbai to
-              critical network management across Kolkata and Chennai, we are the
-              trusted partner for leading telecom operators and ISPs seeking
-              efficiency, scalability, and technical excellence nationwide.
-              We’ve executed thousands of rollout and optimization packages for
-              leading operators and OEM partners, demonstrating deep field
-              capability and robust logistics support.
+              Our approach is 360° and turnkey: strategy, creative design, venue
+              sourcing, travel & accommodation, artist management, event
+              fabrication, and flawless on-site execution. No two Millenium
+              events are the same; we tailor every detail to reflect your
+              brand’s personality and purpose.
             </p>
           </motion.div>
         </div>
       </Container>
       <Ticker services={ticker} />
-
       <Container className="px-4 md:px-10 py-12 overflow-hidden">
         {/* SECTION 2 */}
 
@@ -181,7 +175,7 @@ export default function Telecom() {
               What We Offer
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              Core Telecom Capabilities
+              Core Event Management Capabilities
             </h3>
           </motion.div>
 
@@ -203,12 +197,12 @@ export default function Telecom() {
           {/* Left Column */}
           <div className="grid grid-rows-2 justify-between gap-8 h-full">
             <InfoCard
-              title="Network Rollout & Implementation:"
-              description="We deliver comprehensive network rollout services, including 4G/5G deployments, BTS equipment installation, and microwave (MW) installation. Our expertise extends to Indoor Building Solutions(IBS), Small Cell, UBR, and B2B enterprise work, ensuring projects are completed efficiently and on schedule across India. Comprehensive BTS/NodeB/eNodeB installations, small-cell and UBR deployments, delivered with end-to-end project management and safety governance. We manage civil works, mast/tower work, and final acceptance testing for multi-site rollouts."
+              title="Corporate Events & Conferences:"
+              description="We specialize in managing a wide range of corporate events, including annual meets, sales kickoffs, town halls, and press conferences. Our services ensure every detail is handled, from venue sourcing and stage design to artist procurement and on-ground logistics, guaranteeing a seamless and professional event."
             />
             <InfoCard
-              title="Network Optimization & RF Engineering:"
-              description="Enhance your network's efficiency and user experience with our specialized services. Our team provides expert Radio Frequency(RF) Engineering, Drive-test based RF optimization, SCFT/SSCVT/CLOT methodologies, capacity tuning and inter-site coordination to maximize spectral efficiency and QoE and advanced network optimization solutions to ensure your systems perform at their peak, supporting peak-hour traffic and seamless connectivity. Our RF teams perform systematic performance audits and corrective actions to improve call/drop rates, throughput, and coverage continuity."
+              title="MICE & Incentive Tours:"
+              description="Millenium Leisure is an expert in organizing Meetings, Incentives, Conferences, and Exhibitions. We help you conceive, plan, and execute incentive tours for your top performers, handling all travel, itinerary, and event arrangements to create a truly rewarding and motivating experience."
             />
           </div>
 
@@ -239,22 +233,22 @@ export default function Telecom() {
         {/* SECTION 3 */}
         <div className="my-12">
           <InfoCard
-            title={"Telecom Infrastructure Solutions (Active & Passive)"}
+            title={"Product Launches & Brand Activations:"}
             description={
-              "We manage all aspects of telecom infrastructure, both active and passive, Turnkey active and passive infrastructure delivery including power, grounding, BTS shelters, passive cabling, civil foundations, and solar/UPS integration.This includes professional civil work services, meticulous site acquisition, and ongoing support for network setup and expansion. We provide the foundational support needed for a stable and scalable telecommunication network. We handle site acquisition, permissions, and vendor coordination for rapid site readiness."
+              "Make a big impact with our product launch and brand activation services. We handle the entire process, from conceptualizing the event to getting the right media to attend. Our creative and meticulous approach ensures your product launch is a standout success that captures attention and drives results."
             }
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             <InfoCard
-              title={"Testing, Commissioning & Acceptance"}
+              title={"Full End-to-End 360° Event Setup:"}
               description={
-                "LOS/IBS surveys, site validation, acceptance testing, and post-commissioning QA. We execute acceptance tests for BTS/MW/TXN equipment and provide detailed test reports to meet OEM and operator SLAs."
+                "Our 360-degree event services mean we manage everything from start to finish. This includes creative design, logistics, venue selection, artist management, and outdoor visuals. We handle all unseen details, transforming your vision into a magnificently executed event."
               }
             />
             <InfoCard
-              title={"Field Logistics & Reverse/Forward Logistics"}
+              title={"Exhibitions & Trade Shows:"}
               description={
-                "End-to-end logistics for telecom assets, warehouse handling, first-mile and last-mile deliveries, site returns, and VSAT dismantling, backed by dedicated vehicles and regional hubs for timely, accountable field support."
+                "Custom stall design, fabrication, and booth management for exhibitions and trade shows optimized for traffic flow and brand visibility."
               }
             />
           </div>
@@ -287,19 +281,19 @@ export default function Telecom() {
           {/* Right Column */}
           <div className="grid grid-rows-2 gap-8 h-full">
             <InfoCard
-              title="Managed Services, O&M & NOC Support"
-              description="Ensure continuous network uptime and reliability with our Operations & Maintenance (O&M) services. 24×7 operations & maintenance, equipment health monitoring, preventive maintenance, fault restoration, and NOC services for sustained network performance. Our managed services include spare management, escalation processes, and SLA reporting. Our team provides round-the-clock, total care for your communication systems, from routine maintenance to emergency support, giving you peace of mind and operational stability."
+              title="Leisure & Incentive Tours:"
+              description="Destination research, travel arrangements, hotel booking, activity planning, and full tour management to reward and motivate high performers."
             />
             <InfoCard
-              title="Telecom HR & Recruitment"
-              description="Build a high-performing team with our specialized HR solutions. We source and place qualified professionals for a wide range of telecom projects, from field engineers to technical project managers, helping you build the expert workforce needed to drive your initiatives forward."
+              title="Corporate Celebrations & Social Events:"
+              description="Annual days, gala dinners, family days, weddings, press conferences, and award functions events that leave lasting memories."
             />
           </div>
         </div>
       </Container>
       <ScrollSlide
         description={
-          "We follow a disciplined, safety-first delivery methodology structured and transparent process that scales from single-site jobs to nationwide programs to ensure every telecom project is a success."
+          "We follow a creative and detail-oriented process to bring your event vision to life. No two Millenium events are the same, we tailor every detail to reflect your brand’s personality and purpose."
         }
         steps={steps}
       />
@@ -315,7 +309,7 @@ export default function Telecom() {
               Why Choose Millenium
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              for Telecom Projects
+              for Events & MICE Management
             </h3>
           </motion.div>
 
@@ -326,11 +320,11 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              Over a decade of proven experience delivering successful telecom
-              projects across India for top-tier clients like Samsung and Jio.
-              We maintain 100% compliance with industry regulations and a
-              relentless focus on quality, ensuring reliable, high-performance
-              network delivery.
+              For over a decade, we’ve been the trusted events partner for
+              global brands, delivering on-time, on-budget, and
+              beyond-expectations results. Our portfolio includes
+              high-complexity setups, international incentive tours, and
+              large-scale corporate gatherings.
             </p>
           </motion.div>
         </div>
@@ -379,22 +373,20 @@ export default function Telecom() {
         >
           {/* Heading */}
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Ready to <span className="text-black">Scale Your Network?</span>
+            Ready to{" "}
+            <span className="text-black">create an unforgettable event?</span>
           </h2>
 
           {/* Paragraph */}
           <p className="max-w-3xl mx-auto text-sm md:text-base mb-4">
-            Whether you’re building new 4G/5G capacity, optimizing live
-            performance, or outsourcing O&M and logistics,
-            <span className="font-semibold"> Millenium Global</span> provides
-            the field expertise, regional reach and operational rigor to deliver
-            on time and on spec.
+            Whether it’s a high-profile product launch, a team-building getaway,
+            or a global conference,
+            <span className="font-semibold"> Millenium Global </span> delivers
+            experiences that connect people and elevate brands.
           </p>
 
           <p className="max-w-2xl mx-auto text-sm md:text-base mb-6">
-            Request a proposal or schedule a technical call with our Telecom
-            Delivery team to discuss scope, timelines, and a tailored commercial
-            plan.
+            Get in touch today to start planning your next successful event.
           </p>
 
           {/* Button */}

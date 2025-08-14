@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Container from "../../components/Container";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -8,18 +9,21 @@ const services = [
     description:
       "Comprehensive 4G/5G network rollout and optimization services across Pan‑India regions.",
     image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
+    cta: "/services/telecom",
   },
   {
     title: "Employee Transport",
     description:
       "Automated EV‑powered employee transport solutions ensuring safety and efficiency nationwide.",
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    cta: "/services/employee",
   },
   {
     title: "3PL Logistics",
     description:
       "End‑to‑end 3PL logistics, first/last‑mile and reverse operations across Pan‑India hubs.",
     image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+    cta: "/services/logistics",
   },
   // Duplicating to match 6 cards like in the image
   {
@@ -27,18 +31,21 @@ const services = [
     description:
       "Integrated facility management services including soft, security, and support nationwide.",
     image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
+    cta: "/services/logistics",
   },
   {
     title: " Event Management",
     description:
       "Full‑spectrum MICE and corporate event management services with turnkey execution.",
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    cta: "/services/events",
   },
   {
     title: "HR Recruitment",
     description:
       "Specialized telecom recruitment, RPO services driving talent acquisition across India.",
     image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+    cta: "/services/workspace",
   },
 ];
 
@@ -73,12 +80,14 @@ export default function ServicesGrid() {
                 <p className="text-sm text-[#666666] font-medium flex-grow">
                   {service.description}
                 </p>
-                <button className="text-sm w-fit cursor-pointer font-medium text-black group hover:text-primary inline-flex items-center gap-1 mt-2">
-                  <p>Discover More</p>
-                  <span className="text-white bg-black group-hover:bg-primary rounded-full p-[3px]">
-                    <ArrowRight size={14} />
-                  </span>
-                </button>
+                <Link to={service.cta}>
+                  <button className="text-sm w-fit cursor-pointer font-medium text-black group hover:text-primary inline-flex items-center gap-1 mt-2">
+                    <p>Discover More</p>
+                    <span className="text-white bg-black group-hover:bg-primary rounded-full p-[3px]">
+                      <ArrowRight size={14} />
+                    </span>
+                  </button>
+                </Link>
               </div>
             </motion.div>
           ))}

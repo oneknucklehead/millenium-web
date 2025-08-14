@@ -3,40 +3,10 @@ import { motion } from "framer-motion";
 import img from "../assets/Images/services/telecom/3.png";
 import Container from "./Container";
 
-const steps = [
-  {
-    step: "Step - 1",
-    title: "Survey & Planning",
-    description:
-      "Our process begins with comprehensive surveys, including LOS, IBS, and civil assessments. We meticulously plan site feasibility, allocate resources, and establish a clear timeline to lay a solid foundation for your project.",
-  },
-  {
-    step: "Step - 2",
-    title: "Project Mobilization",
-    description:
-      "Once the plan is set, we mobilize all necessary resources. This phase includes securing regulatory permissions, procuring materials, setting up local vendor partnerships, and finalizing the detailed deployment plan for seamless execution.",
-  },
-  {
-    step: "Step - 3",
-    title: "Execution & Commissioning",
-    description:
-      "Our expert teams then carry out the physical work, from civil construction to equipment installation, ensuring every component functions flawlessly.",
-  },
-  {
-    step: "Step - 4",
-    title: "Quality Assurance",
-    description:
-      "Every phase undergoes rigorous checks to ensure top-notch quality and compliance with industry standards.",
-  },
-  {
-    step: "Step - 5",
-    title: "Handover & Support",
-    description:
-      "We provide complete documentation, training, and ongoing support after project delivery.",
-  },
-];
-
-export default function HowWeWork() {
+export default function HowWeWork({
+  description = "Default description",
+  steps = [],
+}) {
   const leftRef = useRef(null);
   const scrollRef = useRef(null);
   const [leftHeight, setLeftHeight] = useState("auto");
@@ -95,12 +65,7 @@ export default function HowWeWork() {
             <h3 className="text-xl text-primary font-semibold">
               Our Proven Process
             </h3>
-            <p className="text-gray-300">
-              We follow a disciplined, safety-first delivery methodology
-              structured and transparent process that scales from single-site
-              jobs to nationwide programs to ensure every telecom project is a
-              success.
-            </p>
+            <p className="text-gray-300">{description}</p>
             <img src={img} alt="Telecom" className="rounded-lg w-full" />
           </div>
 

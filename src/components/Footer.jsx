@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin } from "lucide-react";
 import logoWhite from "../assets/Images/logoWhite.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const fadeInUp = {
@@ -34,11 +35,20 @@ export default function Footer() {
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
             <h3 className="font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Clients</li>
-              <li>Contact Us</li>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>About Us</Link>
+              </li>
+
+              <li>
+                <Link to={"/services"}>Services</Link>
+              </li>
+              {/* <li>Clients</li> */}
+              <li>
+                <Link to={"/contact"}>Contact Us</Link>
+              </li>
             </ul>
           </motion.div>
 
@@ -46,11 +56,23 @@ export default function Footer() {
           <motion.div variants={fadeInUp} initial="hidden" whileInView="show">
             <h3 className="font-semibold mb-3">Resources</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>Corporate Car Rental</li>
-              <li>Workspace Management</li>
-              <li>Network Managed Services</li>
-              <li>Corporate Event Management</li>
-              <li>Logistics & Fleet Services</li>
+              <li>
+                <Link to={"/services/employee"}>Corporate Car Rental</Link>
+              </li>
+              <li>
+                <Link to={"/services/workspace"}>Workspace Management</Link>
+              </li>
+              <li>
+                <Link to={"/services/telecom"}>Network Managed Services</Link>
+              </li>
+              <li>
+                <Link to={"/services/events"}>Corporate Event Management</Link>
+              </li>
+              <li>
+                <Link to={"/services/logistics"}>
+                  Logistics & Fleet Services
+                </Link>
+              </li>
             </ul>
           </motion.div>
 
@@ -62,7 +84,7 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <div className="space-y-6">
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <div className="bg-white/10 p-3 rounded-lg">
                   <svg
                     width="20"
@@ -83,7 +105,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <div className="bg-white/10 p-3 rounded-lg">
                   <svg
                     width="20"
@@ -100,13 +122,16 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-sm text-gray-300">
+                  <a
+                    href="mailto:contact@milleniumglobal.com"
+                    className="text-sm text-gray-300 hover:underline"
+                  >
                     contact@milleniumglobal.com
-                  </p>
+                  </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-center gap-3">
                 <div className="bg-white/10 p-3 rounded-lg">
                   <svg
                     width="16"

@@ -6,6 +6,11 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services/Services";
 import Telecom from "./pages/Services/Service/Telecom";
 import About from "./pages/About";
+import Employee from "./pages/Services/Service/Employee";
+import Logistics from "./pages/Services/Service/Logistics";
+import Workspace from "./pages/Services/Service/Workspace";
+import Events from "./pages/Services/Service/Events";
+import ScrollToTop from "./components/ScrollToTop";
 
 function Page({ children }) {
   return (
@@ -24,6 +29,7 @@ function Page({ children }) {
 export default function App() {
   return (
     <div className="min-h-screen">
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -31,6 +37,10 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/telecom" element={<Telecom />} />
+        <Route path="/services/employee" element={<Employee />} />
+        <Route path="/services/logistics" element={<Logistics />} />
+        <Route path="/services/workspace" element={<Workspace />} />
+        <Route path="/services/events" element={<Events />} />
       </Routes>
       <Footer />
     </div>

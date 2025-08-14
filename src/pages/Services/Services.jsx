@@ -7,31 +7,31 @@ const cardData = [
     headline: "Telecom Solutions",
     description:
       "Millenium Global delivers comprehensive telecom infrastructure development and optimization. Specializing in 4G/5G rollouts, BTS installation, and O&M, we ensure robust network performance. Our expertise in cities like Delhi NCR, Kolkata, and Mumbai drives seamless connectivity and operational efficiency for leading operators across India.",
-    cta: "",
+    cta: "/services/telecom",
   },
   {
     headline: "Corporate Transport",
     description:
       "Revolutionize employee mobility with Millenium Global's tech-enabled corporate transport services. We provide safe, efficient, and reliable cab fleets, including EV options, for daily commutes and project travel. Our optimized solutions serve businesses in Gurgaon, Chennai, and major Indian cities, enhancing workforce productivity and safety.",
-    cta: "",
+    cta: "/services/employee",
   },
   {
     headline: "Logistics Services",
     description:
       "Millenium Global offers end-to-end 3PL and specialized logistics solutions for seamless supply chain management. From warehousing to fleet services and telecom goods transport, we ensure efficient, timely, and secure movement of your assets. Our services support businesses across Mumbai, Bengaluru, and Hyderabad, optimizing operational flow nationwide.",
-    cta: "",
+    cta: "/services/logistics",
   },
   {
     headline: "Workspace & HR Solutions",
     description:
       "Millenium provides integrated facility management, including complete office design, furnishing (chairs, tables), and ongoing maintenance for optimal workspaces. We also offer expert HR recruitment for telecom projects, ensuring productive and well-staffed corporate environments in Kolkata, Delhi NCR, and major business hubs.",
-    cta: "",
+    cta: "/services/workspace",
   },
   {
     headline: "Event Management",
     description:
       "Millenium Leisure Hospitality crafts unforgettable corporate events, MICE, and brand activations nationwide. Our 360° approach covers creative design, venue sourcing, and flawless execution. We deliver high-impact experiences for businesses in Delhi, Mumbai, and Kolkata, ensuring your message resonates powerfully.",
-    cta: "",
+    cta: "/services/events",
   },
 ];
 
@@ -74,6 +74,7 @@ const Services = () => {
                 description={service.description}
                 reverse={index % 2 === 1} // Alternate layout
                 bg={index % 2 === 0 ? "primary" : "secondary"}
+                cta={service.cta}
               />
             </div>
           ))}

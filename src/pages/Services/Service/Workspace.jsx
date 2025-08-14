@@ -13,83 +13,79 @@ import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
 import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
 import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
 import Ticker from "../../../components/Ticker";
+
 const steps = [
   {
     step: "Step - 1",
-    title: "Survey & Planning",
+    title: "Consultation & Needs Analysis:",
     description:
-      "Our process begins with comprehensive surveys, including LOS, IBS, and civil assessments. We meticulously plan site feasibility, allocate resources, and establish a clear timeline to lay a solid foundation for your project.",
+      "We begin with a detailed consultation to understand your specific requirements for facility management, interior design, and staffing. We assess your goals to create a customized and comprehensive service plan.",
   },
   {
     step: "Step - 2",
-    title: "Project Mobilization",
+    title: "Design & Planning:",
     description:
-      "Once the plan is set, we mobilize all necessary resources. This phase includes securing regulatory permissions, procuring materials, setting up local vendor partnerships, and finalizing the detailed deployment plan for seamless execution.",
+      " For workspace projects, our design team develops a detailed plan, including layouts, furniture selection, and material specifications. For HR, we create a targeted recruitment strategy to find the ideal candidates for your roles.",
   },
   {
     step: "Step - 3",
-    title: "Execution & Commissioning",
+    title: "Execution & Implementation:",
     description:
-      "Our expert teams then carry out the physical work, from civil construction to equipment installation, ensuring every component functions flawlessly.",
+      "Our experienced team executes the plan with precision, whether it's managing a facility transition, overseeing an interior design project, or conducting candidate interviews. We ensure all work is completed to the highest standards.",
   },
   {
     step: "Step - 4",
-    title: "Quality Assurance",
+    title: "Ongoing Management & Support:",
     description:
-      "Every phase undergoes rigorous checks to ensure top-notch quality and compliance with industry standards.",
-  },
-  {
-    step: "Step - 5",
-    title: "Handover & Support",
-    description:
-      "We provide complete documentation, training, and ongoing support after project delivery.",
+      "We provide continuous support and management for our facility services and remain a partner for your ongoing HR needs. We perform regular quality checks and adapt our services to meet your evolving requirements.",
   },
 ];
+
 const data = [
   {
-    title: "Ericsson rollouts & optimizations:",
+    title: "Godrej Properties Corporate Offices:",
     description:
-      "Thousands of cell installations and optimization packages completed (All-Cell rollout counts listed in our program data).",
+      " Complete facility management and ergonomic furniture deployment across multiple locations.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Nokia deployments:",
+    title: "Ford India Workspace Design: ",
     description:
-      "High-volume 4G/5G TDD/FDD rollout projects and optimization engagements across multiple circles.",
+      "End-to-end interior build and workstation setup for operational efficiency and brand consistency.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
   {
-    title: "Samsung & OEM work",
+    title: "NIIT HR Recruitment & Staffing:",
     description:
-      "Triband / pentaband swaps, upgrades and large scale installations with strict QA regimes.",
+      "Specialized hiring for IT and corporate roles with full onboarding support.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Logistics footprint:",
+    title: "Multi-City Facility Operations:",
     description:
-      "Thousands of forward & reverse logistics movements and VSAT dismantles managed with regional hubs and tracked execution.",
+      "Integrated workspace management and corporate transport for pan-India client sites.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
 ];
 
 const features = [
-  "Pan-India Multi-Vendor Rollout Expertise",
-  "Strong Operator & OEM Partnerships",
-  "In-House Logistics & Field Workforce",
-  "100% Safety and Compliance Assurance",
+  "Pan-India Service Delivery with metro and Tier-2 presence",
+  "Design-to-Delivery Expertise, single-window project execution",
+  "Compliance & Quality Assured in facility & HR operations",
+  "Trusted by Industry Leaders across telecom, IT, and corporate sectors",
 ];
 
 const ticker = [
-  "Network Rollout & Implementation",
-  "Network Optimization & RF Engineering",
-  "Telecom Infrastructure Solutions",
-  "Managed Services, O&M & NOC Support",
+  "Workspace Management Solutions",
+  "Full Interior Design & Build",
+  "Office & Workstation Furniture Solutions",
+  "HR Recruitment & Consultancy",
 ];
-export default function Telecom() {
+export default function Workspace() {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -118,10 +114,10 @@ export default function Telecom() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl lg:text-5xl font-bold text-secondary">
-              Telecom Solutions Across India
+              Workspace & HR Solutions
             </h1>
             <h4 className="text-lg lg:text-2xl text-primary font-semibold mt-2">
-              End-to-End Network Rollout, Optimization & O&M Across India
+              Integrated Facility & HR Services
             </h4>
 
             <Link
@@ -146,27 +142,22 @@ export default function Telecom() {
             className=" text-sm md:text-base text-gray-600 space-y-4 leading-relaxed"
           >
             <p>
-              At Millenium Global, we are at the forefront of India's
-              telecommunications revolution. We provide end-to-end, integrated
-              telecom solutions designed to build, optimize, and maintain robust
-              network infrastructures. Millenium Global delivers full-spectrum
-              telecom solutions, from planning and site acquisition to 4G/5G
-              rollout, RF optimization.
+              At Millenium Global, we bring together end-to-end workspace
+              management, premium office furniture solutions, full interior
+              design & build services, and comprehensive HR recruitment &
+              consultancy under one trusted partner.
             </p>
             <p>
-              From cutting-edge 4G/5G deployments in Delhi NCR and Mumbai to
-              critical network management across Kolkata and Chennai, we are the
-              trusted partner for leading telecom operators and ISPs seeking
-              efficiency, scalability, and technical excellence nationwide.
-              We’ve executed thousands of rollout and optimization packages for
-              leading operators and OEM partners, demonstrating deep field
-              capability and robust logistics support.
+              From conceptualizing and constructing inspiring office spaces to
+              supplying ergonomic furniture and managing your facilities, we
+              ensure productivity, comfort, and brand alignment at every stage.
+              Our HR division extends this expertise by sourcing, training, and
+              placing top talent to keep your business performing at its peak.
             </p>
           </motion.div>
         </div>
       </Container>
       <Ticker services={ticker} />
-
       <Container className="px-4 md:px-10 py-12 overflow-hidden">
         {/* SECTION 2 */}
 
@@ -181,7 +172,7 @@ export default function Telecom() {
               What We Offer
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              Core Telecom Capabilities
+              Core Management Capabilities
             </h3>
           </motion.div>
 
@@ -192,23 +183,25 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              We break complex telecom programs into manageable, high-quality
-              deliverables. Each capability below is designed to reduce
-              time-to-market, improve KPIs, and secure operational continuity
-              across metros and remote regions.
+              Serving Delhi NCR, Mumbai, Kolkata, Chennai, Patna, Bhubaneswar,
+              Guwahati, and beyond, Millenium Global is the single window for
+              organizations looking to streamline their work environments and
+              workforce operations. We deliver to corporate offices, industrial
+              hubs, government facilities, IT parks, hospitals, schools, banks,
+              malls, and events with tailored approaches for each sector
             </p>
           </motion.div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Left Column */}
-          <div className="grid grid-rows-2 justify-between gap-8 h-full">
+          <div className="grid grid-rows-2  justify-between gap-8 h-full">
             <InfoCard
-              title="Network Rollout & Implementation:"
-              description="We deliver comprehensive network rollout services, including 4G/5G deployments, BTS equipment installation, and microwave (MW) installation. Our expertise extends to Indoor Building Solutions(IBS), Small Cell, UBR, and B2B enterprise work, ensuring projects are completed efficiently and on schedule across India. Comprehensive BTS/NodeB/eNodeB installations, small-cell and UBR deployments, delivered with end-to-end project management and safety governance. We manage civil works, mast/tower work, and final acceptance testing for multi-site rollouts."
+              title="Workspace Management Solutions:"
+              description="Complete facility management services including soft services, security, housekeeping, pantry, reception, landscaping, pest control, and preventive maintenance — designed for operational efficiency and cost control. Our team ensures seamless day-to-day operations so you can focus entirely on your core business."
             />
             <InfoCard
-              title="Network Optimization & RF Engineering:"
-              description="Enhance your network's efficiency and user experience with our specialized services. Our team provides expert Radio Frequency(RF) Engineering, Drive-test based RF optimization, SCFT/SSCVT/CLOT methodologies, capacity tuning and inter-site coordination to maximize spectral efficiency and QoE and advanced network optimization solutions to ensure your systems perform at their peak, supporting peak-hour traffic and seamless connectivity. Our RF teams perform systematic performance audits and corrective actions to improve call/drop rates, throughput, and coverage continuity."
+              title="Full Interior Design & Build:"
+              description="From concept to execution, our architects and project managers deliver tailor-made office designs that balance function, aesthetics, and productivity — on time and within budget. We manage every detail from space planning to final handover for a stress-free experience."
             />
           </div>
 
@@ -238,23 +231,17 @@ export default function Telecom() {
         </div>
         {/* SECTION 3 */}
         <div className="my-12">
-          <InfoCard
-            title={"Telecom Infrastructure Solutions (Active & Passive)"}
-            description={
-              "We manage all aspects of telecom infrastructure, both active and passive, Turnkey active and passive infrastructure delivery including power, grounding, BTS shelters, passive cabling, civil foundations, and solar/UPS integration.This includes professional civil work services, meticulous site acquisition, and ongoing support for network setup and expansion. We provide the foundational support needed for a stable and scalable telecommunication network. We handle site acquisition, permissions, and vendor coordination for rapid site readiness."
-            }
-          />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             <InfoCard
-              title={"Testing, Commissioning & Acceptance"}
+              title={"Office & Workstation Furniture Solutions:"}
               description={
-                "LOS/IBS surveys, site validation, acceptance testing, and post-commissioning QA. We execute acceptance tests for BTS/MW/TXN equipment and provide detailed test reports to meet OEM and operator SLAs."
+                "End-to-end sourcing and installation of high-quality workstations, desks, meeting tables, and modular storage from global and Indian brands. We offer custom furniture solutions that align with your brand’s identity and workspace needs."
               }
             />
             <InfoCard
-              title={"Field Logistics & Reverse/Forward Logistics"}
+              title={"Ergonomic Office Chairs:"}
               description={
-                "End-to-end logistics for telecom assets, warehouse handling, first-mile and last-mile deliveries, site returns, and VSAT dismantling, backed by dedicated vehicles and regional hubs for timely, accountable field support."
+                "Supply of premium ergonomic seating designed to reduce fatigue, improve posture, and enhance workplace health. Our chairs combine long-lasting durability with modern design to create comfortable, professional environments."
               }
             />
           </div>
@@ -287,19 +274,21 @@ export default function Telecom() {
           {/* Right Column */}
           <div className="grid grid-rows-2 gap-8 h-full">
             <InfoCard
-              title="Managed Services, O&M & NOC Support"
-              description="Ensure continuous network uptime and reliability with our Operations & Maintenance (O&M) services. 24×7 operations & maintenance, equipment health monitoring, preventive maintenance, fault restoration, and NOC services for sustained network performance. Our managed services include spare management, escalation processes, and SLA reporting. Our team provides round-the-clock, total care for your communication systems, from routine maintenance to emergency support, giving you peace of mind and operational stability."
+              title={"Corporate Accommodation & Transport:"}
+              description={
+                "Dedicated solutions for staff housing, daily pick-up/drop, and project-based mobility for your teams nationwide. All services are managed with compliance, safety, and comfort as top priorities."
+              }
             />
             <InfoCard
-              title="Telecom HR & Recruitment"
-              description="Build a high-performing team with our specialized HR solutions. We source and place qualified professionals for a wide range of telecom projects, from field engineers to technical project managers, helping you build the expert workforce needed to drive your initiatives forward."
+              title="HR Recruitment & Consultancy:"
+              description="Specialized recruitment for telecom, IT, and corporate roles, along with talent management, compliance, onboarding, and HR process consulting. We provide end-to-end HR support to help businesses build and retain high-performing teams. Recruitment Process Outsourcing goes beyond simply filling open positions. It's a collaborative partnership that leverages the expertise of a dedicated recruitment team. RPO providers offer a full spectrum of services, from identifying your talent needs to onboarding new hires, ensuring a seamless and efficient recruitment experience."
             />
           </div>
         </div>
       </Container>
       <ScrollSlide
         description={
-          "We follow a disciplined, safety-first delivery methodology structured and transparent process that scales from single-site jobs to nationwide programs to ensure every telecom project is a success."
+          "We follow a structured and collaborative approach to deliver tailored workspace and HR solutions."
         }
         steps={steps}
       />
@@ -315,7 +304,7 @@ export default function Telecom() {
               Why Choose Millenium
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              for Telecom Projects
+              for Workspace & HR Solutions
             </h3>
           </motion.div>
 
@@ -326,11 +315,12 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              Over a decade of proven experience delivering successful telecom
-              projects across India for top-tier clients like Samsung and Jio.
-              We maintain 100% compliance with industry regulations and a
-              relentless focus on quality, ensuring reliable, high-performance
-              network delivery.
+              Millenium Global has transformed workspaces for Fortune 500
+              companies, fast-growing startups, and national telecom leaders,
+              combining design excellence with operational precision. Our HR
+              services have placed hundreds of skilled professionals in
+              mission-critical roles, helping businesses scale without
+              compromise.
             </p>
           </motion.div>
         </div>
@@ -379,22 +369,25 @@ export default function Telecom() {
         >
           {/* Heading */}
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Ready to <span className="text-black">Scale Your Network?</span>
+            Ready to{" "}
+            <span className="text-black">
+              create an exceptional workspace and team?
+            </span>
           </h2>
 
           {/* Paragraph */}
           <p className="max-w-3xl mx-auto text-sm md:text-base mb-4">
-            Whether you’re building new 4G/5G capacity, optimizing live
-            performance, or outsourcing O&M and logistics,
-            <span className="font-semibold"> Millenium Global</span> provides
-            the field expertise, regional reach and operational rigor to deliver
-            on time and on spec.
+            From facility management and ergonomic furniture to full-scale
+            office design and HR recruitment,{" "}
+            <span className="font-semibold"> Millenium Global </span>is your
+            single-window partner for building productive, inspiring, and
+            compliant workplaces.
           </p>
 
           <p className="max-w-2xl mx-auto text-sm md:text-base mb-6">
-            Request a proposal or schedule a technical call with our Telecom
-            Delivery team to discuss scope, timelines, and a tailored commercial
-            plan.
+            Request a proposal or schedule a workspace consultation with our
+            team today — let’s design and manage the environment your business
+            deserves.
           </p>
 
           {/* Button */}

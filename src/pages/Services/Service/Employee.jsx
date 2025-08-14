@@ -13,83 +13,79 @@ import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
 import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
 import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
 import Ticker from "../../../components/Ticker";
+
 const steps = [
   {
     step: "Step - 1",
-    title: "Survey & Planning",
+    title: " Needs Assessment:",
     description:
-      "Our process begins with comprehensive surveys, including LOS, IBS, and civil assessments. We meticulously plan site feasibility, allocate resources, and establish a clear timeline to lay a solid foundation for your project.",
+      "We start by thoroughly understanding your company’s specific requirements, including employee routes, shift timings, safety protocols, and any unique passenger preferences.",
   },
   {
     step: "Step - 2",
-    title: "Project Mobilization",
+    title: "Technology Deployment:",
     description:
-      "Once the plan is set, we mobilize all necessary resources. This phase includes securing regulatory permissions, procuring materials, setting up local vendor partnerships, and finalizing the detailed deployment plan for seamless execution.",
+      "Our operations are powered by an advanced transport management system that handles automated rostering, real-time GPS tracking, geo-fencing, and instant billing for full transparency and control.",
   },
   {
     step: "Step - 3",
-    title: "Execution & Commissioning",
+    title: "Fleet Allocation:",
     description:
-      "Our expert teams then carry out the physical work, from civil construction to equipment installation, ensuring every component functions flawlessly.",
+      "We strategically match the right vehicles including EV, CNG, and diesel options and our trained drivers to your needs, optimizing for both cost-efficiency and employee comfort.",
   },
   {
     step: "Step - 4",
-    title: "Quality Assurance",
+    title: "Daily Operations & Monitoring:",
     description:
-      "Every phase undergoes rigorous checks to ensure top-notch quality and compliance with industry standards.",
-  },
-  {
-    step: "Step - 5",
-    title: "Handover & Support",
-    description:
-      "We provide complete documentation, training, and ongoing support after project delivery.",
+      "Our team provides continuous, real-time trip monitoring from a central command center, conducts regular performance audits, and delivers detailed monthly KPI reports to ensure service excellence.",
   },
 ];
+
 const data = [
   {
-    title: "Ericsson rollouts & optimizations:",
+    title: "Working with Top Companies:",
     description:
-      "Thousands of cell installations and optimization packages completed (All-Cell rollout counts listed in our program data).",
+      "Serving BPOs, IT parks, telecom projects, and manufacturing hubs across major Indian cities.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Nokia deployments:",
+    title: "Special Purpose Vehicle:",
     description:
-      "High-volume 4G/5G TDD/FDD rollout projects and optimization engagements across multiple circles.",
+      "India’s first mobile interview shuttle successfully deployed for Teleperformance’s CSR hiring drive in Northeast India.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
   {
-    title: "Samsung & OEM work",
+    title: "Focus on EV Future:",
     description:
-      "Triband / pentaband swaps, upgrades and large scale installations with strict QA regimes.",
+      "EV segment introduced to corporate fleets, lowering client transport tariffs and reducing carbon footprint.",
     bgColor: "bg-primary",
     textColor: "text-white",
   },
   {
-    title: "Logistics footprint:",
+    title: "Always On-Time:",
     description:
-      "Thousands of forward & reverse logistics movements and VSAT dismantles managed with regional hubs and tracked execution.",
+      "Thousands of on-time trips completed monthly, with 24×7 support and automated billing.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
 ];
 
 const features = [
-  "Pan-India Multi-Vendor Rollout Expertise",
-  "Strong Operator & OEM Partnerships",
-  "In-House Logistics & Field Workforce",
-  "100% Safety and Compliance Assurance",
+  "Pan-India Corporate Mobility Expertise",
+  "Technology-Driven Transport Management",
+  "EV & Sustainable Fleet Options",
+  "Safety-First, Compliance-Guaranteed Operations",
 ];
 
 const ticker = [
-  "Network Rollout & Implementation",
-  "Network Optimization & RF Engineering",
-  "Telecom Infrastructure Solutions",
-  "Managed Services, O&M & NOC Support",
+  "Employee Transportation Services",
+  "Dedicated Project & Telecom Fleet",
+  "Rent-a-Cab & Spot Rentals",
+  "Special Purpose Vehicles",
 ];
-export default function Telecom() {
+export default function Employee() {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -118,10 +114,10 @@ export default function Telecom() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl lg:text-5xl font-bold text-secondary">
-              Telecom Solutions Across India
+              Employee Transport Solutions
             </h1>
             <h4 className="text-lg lg:text-2xl text-primary font-semibold mt-2">
-              End-to-End Network Rollout, Optimization & O&M Across India
+              Smart, Safe & Scalable Corporate Mobility Across India
             </h4>
 
             <Link
@@ -146,27 +142,28 @@ export default function Telecom() {
             className=" text-sm md:text-base text-gray-600 space-y-4 leading-relaxed"
           >
             <p>
-              At Millenium Global, we are at the forefront of India's
-              telecommunications revolution. We provide end-to-end, integrated
-              telecom solutions designed to build, optimize, and maintain robust
-              network infrastructures. Millenium Global delivers full-spectrum
-              telecom solutions, from planning and site acquisition to 4G/5G
-              rollout, RF optimization.
+              At Millenium Global, we revolutionize corporate mobility with our
+              end-to-end Employee Transportation Solutions. Our tech-driven
+              approach ensures a safe, reliable, and comfortable commute for
+              your workforce, enhancing productivity and peace of mind. As a
+              trusted partner for businesses in Gurgaon, Chennai, Mumbai, and
+              other major hubs, we deliver seamless logistics, professional
+              fleet management, and tailored services that perfectly align with
+              your operational needs.
             </p>
             <p>
-              From cutting-edge 4G/5G deployments in Delhi NCR and Mumbai to
-              critical network management across Kolkata and Chennai, we are the
-              trusted partner for leading telecom operators and ISPs seeking
-              efficiency, scalability, and technical excellence nationwide.
-              We’ve executed thousands of rollout and optimization packages for
-              leading operators and OEM partners, demonstrating deep field
-              capability and robust logistics support.
+              Millenium Global delivers end-to-end corporate transportation
+              solutions for enterprises, BPOs, telecom projects, and industrial
+              hubs across Delhi NCR, Mumbai, Kolkata, Chennai, and Pan-India.
+              From daily employee commute to dedicated project fleets, we
+              combine technology, safety, and sustainability to ensure on-time,
+              compliant, and comfortable travel for thousands of passengers
+              daily.
             </p>
           </motion.div>
         </div>
       </Container>
       <Ticker services={ticker} />
-
       <Container className="px-4 md:px-10 py-12 overflow-hidden">
         {/* SECTION 2 */}
 
@@ -181,7 +178,7 @@ export default function Telecom() {
               What We Offer
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              Core Telecom Capabilities
+              Core Transport Capabilities
             </h3>
           </motion.div>
 
@@ -192,10 +189,11 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              We break complex telecom programs into manageable, high-quality
-              deliverables. Each capability below is designed to reduce
-              time-to-market, improve KPIs, and secure operational continuity
-              across metros and remote regions.
+              We provide customized, fully-managed transport programs designed
+              for both high-volume corporate travel and specialized project
+              requirements. We deploy a modern fleet of vehicles, including our
+              eco-friendly EVs, alongside our professionally trained and vetted
+              drivers, ensuring a high standard of service from day one.
             </p>
           </motion.div>
         </div>
@@ -203,12 +201,14 @@ export default function Telecom() {
           {/* Left Column */}
           <div className="grid grid-rows-2 justify-between gap-8 h-full">
             <InfoCard
-              title="Network Rollout & Implementation:"
-              description="We deliver comprehensive network rollout services, including 4G/5G deployments, BTS equipment installation, and microwave (MW) installation. Our expertise extends to Indoor Building Solutions(IBS), Small Cell, UBR, and B2B enterprise work, ensuring projects are completed efficiently and on schedule across India. Comprehensive BTS/NodeB/eNodeB installations, small-cell and UBR deployments, delivered with end-to-end project management and safety governance. We manage civil works, mast/tower work, and final acceptance testing for multi-site rollouts."
+              title="Employee Transportation Solution:"
+              description={
+                "We offer end-to-end employee transportation management, from routing and scheduling to real-time tracking and emergency support. Our solutions are designed to optimize routes for efficiency, reduce travel time, and provide a comfortable and safe commuting experience for your entire workforce. AI-powered pick-up and drop services via cabs and buses, optimized through automated rostering, routing, and scheduling for maximum on-time performance and minimum travel time."
+              }
             />
             <InfoCard
-              title="Network Optimization & RF Engineering:"
-              description="Enhance your network's efficiency and user experience with our specialized services. Our team provides expert Radio Frequency(RF) Engineering, Drive-test based RF optimization, SCFT/SSCVT/CLOT methodologies, capacity tuning and inter-site coordination to maximize spectral efficiency and QoE and advanced network optimization solutions to ensure your systems perform at their peak, supporting peak-hour traffic and seamless connectivity. Our RF teams perform systematic performance audits and corrective actions to improve call/drop rates, throughput, and coverage continuity."
+              title="Rent a Cab/Spot Rental:"
+              description="For flexible business needs, our Rent a Cab and Spot Rental services provide on-demand mobility. Whether it's for executive travel, ad-hoc team movements, or guest transportation, our professional drivers and well-maintained vehicles are available to meet your specific requirements in cities like Chennai and Bengaluru. Flexible cab booking for short-term or urgent corporate needs, with full compliance and vetted professional drivers."
             />
           </div>
 
@@ -239,22 +239,22 @@ export default function Telecom() {
         {/* SECTION 3 */}
         <div className="my-12">
           <InfoCard
-            title={"Telecom Infrastructure Solutions (Active & Passive)"}
+            title={"Project Cab & Logistics:"}
             description={
-              "We manage all aspects of telecom infrastructure, both active and passive, Turnkey active and passive infrastructure delivery including power, grounding, BTS shelters, passive cabling, civil foundations, and solar/UPS integration.This includes professional civil work services, meticulous site acquisition, and ongoing support for network setup and expansion. We provide the foundational support needed for a stable and scalable telecommunication network. We handle site acquisition, permissions, and vendor coordination for rapid site readiness."
+              "Our specialized Project Cab services cater to project-based requirements, ensuring your teams have reliable transportation for the duration of a project. We integrate this with our 3PL logistics expertise to provide comprehensive fleet and transportation solutions for both personnel and project-specific cargo. 12-hour and 24-hour dedicated cabs and project-specific vehicles, including site vans for telecom companies, ensuring uninterrupted crew and equipment mobility."
             }
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             <InfoCard
-              title={"Testing, Commissioning & Acceptance"}
+              title={"Special Purpose Vehicles:"}
               description={
-                "LOS/IBS surveys, site validation, acceptance testing, and post-commissioning QA. We execute acceptance tests for BTS/MW/TXN equipment and provide detailed test reports to meet OEM and operator SLAs."
+                "Medical vans, mobile interview shuttles (India’s first, delivered for Teleperformance in the Northeast), and training vans equipped with all necessary onboard facilities."
               }
             />
             <InfoCard
-              title={"Field Logistics & Reverse/Forward Logistics"}
+              title={"EV-Powered Fleet:"}
               description={
-                "End-to-end logistics for telecom assets, warehouse handling, first-mile and last-mile deliveries, site returns, and VSAT dismantling, backed by dedicated vehicles and regional hubs for timely, accountable field support."
+                "Eco-friendly electric vehicles reduce emissions and fuel costs while offering quiet, comfortable commutes for passengers and contributing to clients’ sustainability goals."
               }
             />
           </div>
@@ -287,20 +287,18 @@ export default function Telecom() {
           {/* Right Column */}
           <div className="grid grid-rows-2 gap-8 h-full">
             <InfoCard
-              title="Managed Services, O&M & NOC Support"
-              description="Ensure continuous network uptime and reliability with our Operations & Maintenance (O&M) services. 24×7 operations & maintenance, equipment health monitoring, preventive maintenance, fault restoration, and NOC services for sustained network performance. Our managed services include spare management, escalation processes, and SLA reporting. Our team provides round-the-clock, total care for your communication systems, from routine maintenance to emergency support, giving you peace of mind and operational stability."
+              title="Interview Shuttle Services:"
+              description="Make a strong first impression with our dedicated interview shuttle services. We provide professional, punctual transportation for job candidates, ensuring a seamless and positive experience from their door to your office, reflecting your company’s commitment to excellence and care. Specially designed, fully-equipped mobile units to conduct remote recruitment drives, enabling corporate HR teams to access untapped talent pools in tier-2 and tier-3 cities."
             />
             <InfoCard
-              title="Telecom HR & Recruitment"
-              description="Build a high-performing team with our specialized HR solutions. We source and place qualified professionals for a wide range of telecom projects, from field engineers to technical project managers, helping you build the expert workforce needed to drive your initiatives forward."
+              title="Professional Driver Training:"
+              description="Safety is our top priority. Our drivers undergo rigorous professional training that covers defensive driving, first aid, and customer service. This ensures that every journey is not only efficient but also conducted with the highest standards of safety and professionalism. All drivers undergo professional safety training, background verification, and regular compliance checks. Trips are tracked in real-time, with emergency response protocols in place."
             />
           </div>
         </div>
       </Container>
       <ScrollSlide
-        description={
-          "We follow a disciplined, safety-first delivery methodology structured and transparent process that scales from single-site jobs to nationwide programs to ensure every telecom project is a success."
-        }
+        description="We follow a meticulous four-step process to ensure a reliable and efficient transportation service. We run corporate transport like a precision logistics operation"
         steps={steps}
       />
       <Container className="px-4 md:px-10 py-12 overflow-hidden">
@@ -315,7 +313,7 @@ export default function Telecom() {
               Why Choose Millenium
             </h2>
             <h3 className="text-2xl lg:text-4xl text-primary font-semibold">
-              for Telecom Projects
+              for Corporate Transport
             </h3>
           </motion.div>
 
@@ -326,11 +324,12 @@ export default function Telecom() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-gray-600 text-sm lg:text-base leading-relaxed">
-              Over a decade of proven experience delivering successful telecom
-              projects across India for top-tier clients like Samsung and Jio.
-              We maintain 100% compliance with industry regulations and a
-              relentless focus on quality, ensuring reliable, high-performance
-              network delivery.
+              With a strong operational footprint in major metropolitan areas
+              like Delhi NCR, Mumbai, Kolkata, and Guwahati, we provide scalable
+              corporate mobility solutions wherever your business is located.
+              Our top priority is safety, with every vehicle and driver adhering
+              to strict safety protocols, regular audits, and all regulatory
+              compliance standards.
             </p>
           </motion.div>
         </div>
@@ -379,22 +378,21 @@ export default function Telecom() {
         >
           {/* Heading */}
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            Ready to <span className="text-black">Scale Your Network?</span>
+            Move Your People,{" "}
+            <span className="text-black">Power Your Business</span>
           </h2>
 
           {/* Paragraph */}
           <p className="max-w-3xl mx-auto text-sm md:text-base mb-4">
-            Whether you’re building new 4G/5G capacity, optimizing live
-            performance, or outsourcing O&M and logistics,
+            Whether you need daily employee transport, dedicated project cabs,
+            or special-purpose vehicles for recruitment and medical services,{" "}
             <span className="font-semibold"> Millenium Global</span> provides
-            the field expertise, regional reach and operational rigor to deliver
-            on time and on spec.
+            the fleet, technology, and expertise to keep your business moving.
           </p>
 
           <p className="max-w-2xl mx-auto text-sm md:text-base mb-6">
-            Request a proposal or schedule a technical call with our Telecom
-            Delivery team to discuss scope, timelines, and a tailored commercial
-            plan.
+            Request a proposal or schedule a transport consultation with our
+            Corporate Mobility Team today.
           </p>
 
           {/* Button */}
