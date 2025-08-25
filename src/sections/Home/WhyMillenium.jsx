@@ -7,7 +7,7 @@ import {
   Handshake,
 } from "lucide-react";
 import Container from "../../components/Container";
-import team from "../../assets/Images/team.png";
+import team from "../../assets/Images/WhyBusiness.webp";
 import { Link } from "react-router-dom";
 
 export default function WhyMillenium() {

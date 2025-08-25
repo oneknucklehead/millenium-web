@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import img1 from "../../assets/Images/solutions/1.png";
-import img2 from "../../assets/Images/solutions/2.png";
-import img3 from "../../assets/Images/solutions/3.png";
+import img1 from "../../assets/Images/solutions/1.webp";
+import img2 from "../../assets/Images/solutions/2.webp";
+import img3 from "../../assets/Images/solutions/3.webp";
 import { ArrowRight } from "lucide-react";
 import Container from "../../components/Container";
 import { Link } from "react-router-dom";

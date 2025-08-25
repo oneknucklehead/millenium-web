@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import bannerImg from "../../../assets/Images/services/telecom/banner.png";
+import bannerImg from "../../../assets/Images/services/Events/banner.webp";
 import Container from "../../../components/Container";
 import InfoCard from "../../../components/InfoCard";
-import img1 from "../../../assets/Images/services/telecom/1.png";
-import img2 from "../../../assets/Images/services/telecom/2.png";
+import img1 from "../../../assets/Images/services/Events/core1.webp";
+import img2 from "../../../assets/Images/services/Events/core2.webp";
 import ScrollSlide from "../../../components/ScrollSlide";
+import imgHow from "../../../assets/Images/services/Events/how.webp";
 
-import brand1 from "../../../assets/Images/services/telecom/companies/1.png";
-import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
-import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
-import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
+import brand1 from "../../../assets/Images/services/Events/logos/4.webp";
+import brand2 from "../../../assets/Images/services/Events/logos/5.webp";
+import brand3 from "../../../assets/Images/services/Events/logos/6.webp";
+import brand4 from "../../../assets/Images/services/Events/logos/7.webp";
 import Ticker from "../../../components/Ticker";
 
 const steps = [
@@ -292,6 +293,7 @@ export default function Events() {
         </div>
       </Container>
       <ScrollSlide
+        imgHow={imgHow}
         description={
           "We follow a creative and detail-oriented process to bring your event vision to life. No two Millenium events are the same, we tailor every detail to reflect your brand’s personality and purpose."
         }
@@ -359,10 +361,10 @@ export default function Events() {
           ))}
         </div>
         <div className="flex gap-6 items-center justify-center my-8 flex-wrap">
-          <img src={brand1} alt="jio logo" />
-          <img src={brand2} alt="ericsson logo" />
-          <img src={brand3} alt="nokia logo" />
-          <img src={brand4} alt="samsung logo" />
+          <img src={brand1} className="w-36" alt="jio logo" />
+          <img src={brand2} className="w-36" alt="ericsson logo" />
+          <img src={brand3} className="w-36" alt="nokia logo" />
+          <img src={brand4} className="w-36" alt="samsung logo" />
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

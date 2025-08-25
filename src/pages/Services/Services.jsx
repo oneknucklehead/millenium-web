@@ -2,36 +2,47 @@ import React from "react";
 import ServiceCard from "../../sections/Services/ServiceCard";
 import Container from "../../components/Container";
 
+import img1 from "../../assets/Images/services/1.webp";
+import img2 from "../../assets/Images/services/2.webp";
+import img3 from "../../assets/Images/services/3.webp";
+import img4 from "../../assets/Images/services/4.webp";
+import img5 from "../../assets/Images/services/5.webp";
+
 const cardData = [
   {
     headline: "Corporate Employee Transport",
     description:
       "Revolutionize employee mobility with Millenium Global's tech-enabled corporate transport services. We provide safe, efficient, and reliable cab fleets, including EV options, for daily commutes and project travel. Our optimized solutions serve businesses in Gurgaon, Chennai, and major Indian cities, enhancing workforce productivity and safety.",
     cta: "/services/employee",
+    img: img1,
   },
   {
     headline: "Telecom Solutions",
     description:
       "Millenium Global delivers comprehensive telecom infrastructure development and optimization. Specializing in 4G/5G rollouts, BTS installation, and O&M, we ensure robust network performance. Our expertise in cities like Delhi NCR, Kolkata, and Mumbai drives seamless connectivity and operational efficiency for leading operators across India.",
     cta: "/services/telecom",
+    img: img2,
   },
   {
     headline: "Logistics Services",
     description:
       "Millenium Global offers end-to-end 3PL and specialized logistics solutions for seamless supply chain management. From warehousing to fleet services and telecom goods transport, we ensure efficient, timely, and secure movement of your assets. Our services support businesses across Mumbai, Bengaluru, and Hyderabad, optimizing operational flow nationwide.",
     cta: "/services/logistics",
+    img: img3,
   },
   {
     headline: "Workspace & HR Solutions",
     description:
       "Millenium provides integrated facility management, including complete office design, furnishing (chairs, tables), and ongoing maintenance for optimal workspaces. We also offer expert HR recruitment for telecom projects, ensuring productive and well-staffed corporate environments in Kolkata, Delhi NCR, and major business hubs.",
     cta: "/services/workspace",
+    img: img4,
   },
   {
     headline: "Event Management",
     description:
       "Millenium Leisure Hospitality crafts unforgettable corporate events, MICE, and brand activations nationwide. Our 360° approach covers creative design, venue sourcing, and flawless execution. We deliver high-impact experiences for businesses in Delhi, Mumbai, and Kolkata, ensuring your message resonates powerfully.",
     cta: "/services/events",
+    img: img5,
   },
 ];
 
@@ -72,6 +83,7 @@ const Services = () => {
                 key={index}
                 title={service.headline}
                 description={service.description}
+                teamImg={service.img}
                 reverse={index % 2 === 1} // Alternate layout
                 bg={index % 2 === 0 ? "primary" : "secondary"}
                 cta={service.cta}

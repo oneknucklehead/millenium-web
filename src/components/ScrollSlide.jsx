@@ -1,11 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import img from "../assets/Images/services/telecom/3.png";
+import img from "../assets/Images/services/telecom/3.webp";
 import Container from "./Container";
 
 export default function HowWeWork({
   description = "Default description",
   steps = [],
+  imgHow = img,
 }) {
   const leftRef = useRef(null);
   const scrollRef = useRef(null);
@@ -66,7 +67,7 @@ export default function HowWeWork({
               Our Proven Process
             </h3>
             <p className="text-gray-300">{description}</p>
-            <img src={img} alt="Telecom" className="rounded-lg w-full" />
+            <img src={imgHow} alt="Telecom" className="rounded-lg w-full" />
           </div>
 
           {/* Right side */}

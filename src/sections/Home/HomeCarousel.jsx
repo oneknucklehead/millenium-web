@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import carouselImg1 from "../../assets/Images/carouselImg-1.png";
+import carouselImg1 from "../../assets/Images/1.webp";
+import carouselImg2 from "../../assets/Images/2.webp";
+import carouselImg3 from "../../assets/Images/3.webp";
+import carouselImg4 from "../../assets/Images/4.webp";
 
 const slides = [
   {
@@ -12,19 +15,19 @@ const slides = [
   },
   {
     id: 2,
-    image: "/carousel-2.jpg",
+    image: carouselImg2,
     heading: " Building India's Future Networks:",
     subheading: "4G & 5G Rollouts.",
   },
   {
     id: 3,
-    image: "/carousel-3.jpg",
+    image: carouselImg3,
     heading: "Integrated 3PL & ",
     subheading: "Reverse Logistics.",
   },
   {
     id: 4,
-    image: "/carousel-4.jpg",
+    image: carouselImg4,
     heading: "Full-Service Event Production:",
     subheading: "From Concept to Grand Finale.",
   },

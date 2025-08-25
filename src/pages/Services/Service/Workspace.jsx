@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import bannerImg from "../../../assets/Images/services/telecom/banner.png";
+import bannerImg from "../../../assets/Images/services/Workspace/banner.webp";
 import Container from "../../../components/Container";
 import InfoCard from "../../../components/InfoCard";
-import img1 from "../../../assets/Images/services/telecom/1.png";
-import img2 from "../../../assets/Images/services/telecom/2.png";
+import img1 from "../../../assets/Images/services/Workspace/core1.webp";
+import img2 from "../../../assets/Images/services/Workspace/core2.webp";
+import imgHow from "../../../assets/Images/services/Workspace/how.webp";
 import ScrollSlide from "../../../components/ScrollSlide";
 
-import brand1 from "../../../assets/Images/services/telecom/companies/1.png";
-import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
-import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
-import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
+import brand1 from "../../../assets/Images/services/EmpTransport/logos/3.webp";
+import brand2 from "../../../assets/Images/services/EmpTransport/logos/4.webp";
 import Ticker from "../../../components/Ticker";
 
 const steps = [
@@ -287,6 +286,7 @@ export default function Workspace() {
         </div>
       </Container>
       <ScrollSlide
+        imgHow={imgHow}
         description={
           "We follow a structured and collaborative approach to deliver tailored workspace and HR solutions."
         }
@@ -355,10 +355,8 @@ export default function Workspace() {
           ))}
         </div>
         <div className="flex gap-6 items-center justify-center my-8 flex-wrap">
-          <img src={brand1} alt="jio logo" />
-          <img src={brand2} alt="ericsson logo" />
-          <img src={brand3} alt="nokia logo" />
-          <img src={brand4} alt="samsung logo" />
+          <img src={brand1} className="w-36" alt="jio logo" />
+          <img src={brand2} className="w-36" alt="ericsson logo" />
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

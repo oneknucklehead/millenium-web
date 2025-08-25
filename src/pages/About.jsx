@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
-import bannerImage from "../assets/Images/about/banner.png";
+import bannerImage from "../assets/Images/about/hero.webp";
 import img1 from "../assets/Images/about/1.png";
 import img2 from "../assets/Images/about/2.png";
 import img3 from "../assets/Images/about/3.png";
@@ -24,9 +24,9 @@ import sunn from "../assets/Images/about/clients/13.png";
 import hfcl from "../assets/Images/about/clients/12.png";
 import godrej from "../assets/Images/about/clients/16.png";
 
-import cert1 from "../assets/Images/about/certificates/cert1.png";
-import cert2 from "../assets/Images/about/certificates/cert2.png";
-import cert3 from "../assets/Images/about/certificates/cert3.png";
+import cert1 from "../assets/Images/about/certificates/cert1.webp";
+import cert2 from "../assets/Images/about/certificates/cert2.webp";
+import cert3 from "../assets/Images/about/certificates/cert3.webp";
 
 const logos = [
   tcs,
@@ -399,7 +399,7 @@ const About = () => {
             <img
               src={cert1}
               alt="certificate 1"
-              className="cursor-pointer rounded shadow-md"
+              className="w-60 cursor-pointer rounded shadow-md"
             />
           </a>
 
@@ -407,7 +407,7 @@ const About = () => {
             <img
               src={cert2}
               alt="certificate 2"
-              className="cursor-pointer rounded shadow-md"
+              className="w-60 cursor-pointer rounded shadow-md"
             />
           </a>
 
@@ -415,7 +415,7 @@ const About = () => {
             <img
               src={cert3}
               alt="certificate 3"
-              className="cursor-pointer rounded shadow-md"
+              className="w-60 cursor-pointer rounded shadow-md"
             />
           </a>
         </div>

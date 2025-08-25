@@ -3,26 +3,33 @@ import { ArrowRight } from "lucide-react";
 import Container from "../../components/Container";
 import { Link } from "react-router-dom";
 
+import events from "../../assets/Images/services/Events.webp";
+import facility from "../../assets/Images/services/FacilityManagement.webp";
+import hr from "../../assets/Images/services/HR-Recruiter-Job-Description.webp";
+import logistics from "../../assets/Images/services/Logistics.webp";
+import telecom from "../../assets/Images/services/Telecom.webp";
+import employeeRransportation from "../../assets/Images/services/EmployeeRransportation.webp";
+
 const services = [
   {
     title: "Telecom Solutions",
     description:
       "Comprehensive 4G/5G network rollout and optimization services across Pan‑India regions.",
-    image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
+    image: telecom,
     cta: "/services/telecom",
   },
   {
     title: "Employee Transport",
     description:
       "Automated EV‑powered employee transport solutions ensuring safety and efficiency nationwide.",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    image: employeeRransportation,
     cta: "/services/employee",
   },
   {
     title: "3PL Logistics",
     description:
       "End‑to‑end 3PL logistics, first/last‑mile and reverse operations across Pan‑India hubs.",
-    image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+    image: logistics,
     cta: "/services/logistics",
   },
   // Duplicating to match 6 cards like in the image
@@ -30,21 +37,21 @@ const services = [
     title: "Facility Management",
     description:
       "Integrated facility management services including soft, security, and support nationwide.",
-    image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
+    image: facility,
     cta: "/services/workspace",
   },
   {
     title: " Event Management",
     description:
       "Full‑spectrum MICE and corporate event management services with turnkey execution.",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    image: events,
     cta: "/services/events",
   },
   {
     title: "HR Recruitment",
     description:
       "Specialized telecom recruitment, RPO services driving talent acquisition across India.",
-    image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg",
+    image: hr,
     cta: "/services/workspace",
   },
 ];

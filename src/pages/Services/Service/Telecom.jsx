@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Check, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import bannerImg from "../../../assets/Images/services/telecom/banner.png";
+import bannerImg from "../../../assets/Images/services/telecom/banner.webp";
 import Container from "../../../components/Container";
 import InfoCard from "../../../components/InfoCard";
-import img1 from "../../../assets/Images/services/telecom/1.png";
-import img2 from "../../../assets/Images/services/telecom/2.png";
+import img1 from "../../../assets/Images/services/telecom/core1.webp";
+import img2 from "../../../assets/Images/services/telecom/core2.webp";
 import ScrollSlide from "../../../components/ScrollSlide";
 
 import brand1 from "../../../assets/Images/services/telecom/companies/1.png";
