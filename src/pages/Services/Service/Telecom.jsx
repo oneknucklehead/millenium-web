@@ -244,6 +244,14 @@ export default function Telecom() {
               "We manage all aspects of telecom infrastructure, both active and passive, Turnkey active and passive infrastructure delivery including power, grounding, BTS shelters, passive cabling, civil foundations, and solar/UPS integration.This includes professional civil work services, meticulous site acquisition, and ongoing support for network setup and expansion. We provide the foundational support needed for a stable and scalable telecommunication network. We handle site acquisition, permissions, and vendor coordination for rapid site readiness."
             }
           />
+        </div>
+        <div>
+          <InfoCard
+            title={"Electromagnetic Field (EMF) Compliance"}
+            description={
+              "We ensure telecom sites meet India’s strict EMF safety standards through testing, audits, and documentation. Millenium’s teams deliver end-to-end EMF measurement, certification, and compliance reporting, safeguarding both networks and communities."
+            }
+          />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             <InfoCard
               title={"Testing, Commissioning & Acceptance"}

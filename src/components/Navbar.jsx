@@ -7,9 +7,11 @@ import logo from "../assets/Images/logo.png";
 
 const navLinks = [
   { name: "Home", to: "/" },
+  { name: "About Us", to: "/about" },
   { name: "Services", to: "/services" },
   // { name: "Clients", to: "/clients" },
-  { name: "About Us", to: "/about" },
+  { name: "Employee Transport", to: "/services/employee" },
+  { name: "Telecom Solutions", to: "/services/telecom" },
 ];
 
 export default function Navbar() {

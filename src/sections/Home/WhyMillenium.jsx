@@ -43,7 +43,7 @@ export default function WhyMillenium() {
     {
       id: 4,
       numbers: "500+",
-      title: "EV Fleet Vehicles",
+      title: "EV & ICE FLEET",
       text: "Green mobility solutions delivering cost savings, safety & Net Zero alignment.",
       color: "bg-secondary",
     },
@@ -177,7 +177,7 @@ export default function WhyMillenium() {
 
               <div>
                 <p className="text-[#666666] text-sm">Let’s Talk</p>
-                <span className="font-medium font-base">+91 0505 5050</span>
+                <span className="font-medium font-base">+91 99107 24900</span>
               </div>
             </div>
           </div>

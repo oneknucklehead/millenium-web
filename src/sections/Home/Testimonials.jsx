@@ -61,7 +61,7 @@ const Testimonials = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6 mt-2">
+          <div className="max-w-7xl mx-auto px-4 grid md:flex md:justify-between gap-6 mt-2">
             {/* Left Content */}
 
             <motion.div

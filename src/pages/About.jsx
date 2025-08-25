@@ -22,6 +22,7 @@ import hughes from "../assets/Images/about/clients/14.png";
 import indus from "../assets/Images/about/clients/15.png";
 import sunn from "../assets/Images/about/clients/13.png";
 import hfcl from "../assets/Images/about/clients/12.png";
+import godrej from "../assets/Images/about/clients/16.png";
 
 import cert1 from "../assets/Images/about/certificates/cert1.png";
 import cert2 from "../assets/Images/about/certificates/cert2.png";
@@ -43,6 +44,7 @@ const logos = [
   hughes,
   indus,
   sunn,
+  godrej,
 ];
 import {
   RadioTower,
@@ -269,7 +271,7 @@ const About = () => {
                 <ArrowRight size={16} />
               </motion.button> */}
               <Link
-                to={"/contact"}
+                to={"/services"}
                 className={`group transition duration-300 w-fit px-4 py-2 rounded-lg inline-flex border bg-white hover:bg-secondary hover:text-white items-center gap-2 text-sm font-semibold text-secondary`}
               >
                 <p>Explore More</p>
@@ -393,9 +395,29 @@ const About = () => {
           the infrastructure that keeps India moving.
         </p>
         <div className="flex flex-wrap justify-center items-center gap-6 my-12">
-          <img src={cert1} alt="certificate 1" />
-          <img src={cert2} alt="certificate 2" />
-          <img src={cert3} alt="certificate 3" />
+          <a href={cert1} target="_blank" rel="noopener noreferrer">
+            <img
+              src={cert1}
+              alt="certificate 1"
+              className="cursor-pointer rounded shadow-md"
+            />
+          </a>
+
+          <a href={cert2} target="_blank" rel="noopener noreferrer">
+            <img
+              src={cert2}
+              alt="certificate 2"
+              className="cursor-pointer rounded shadow-md"
+            />
+          </a>
+
+          <a href={cert3} target="_blank" rel="noopener noreferrer">
+            <img
+              src={cert3}
+              alt="certificate 3"
+              className="cursor-pointer rounded shadow-md"
+            />
+          </a>
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

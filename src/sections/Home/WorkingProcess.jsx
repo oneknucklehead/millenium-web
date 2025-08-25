@@ -108,36 +108,42 @@ export default function WorkingProcess() {
             transition={{ duration: 0.5 }}
           >
             {/* Left - Blinker + Text */}
-            <div className="flex  rounded-lg px-6 sm:px-10 py-4 sm:py-3 bg-primary items-center space-x-3 sm:space-x-4">
+            <div className="flex rounded-lg px-6 sm:px-10 py-4 sm:py-3 bg-primary items-center space-x-3 sm:space-x-4">
               <div className="relative flex items-center justify-center shrink-0">
                 {/* Ripple Effect */}
                 <motion.div
-                  className="absolute w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200"
+                  className="absolute w-10 h-10 sm:w-12 sm:h-12 rounded-full"
                   animate={{
-                    scale: [1, 2],
-                    opacity: [0.6, 0],
+                    scale: [1, 2, 1], // returns smoothly to 1
+                    opacity: [0.6, 0, 0], // fades out and stays hidden before restart
                   }}
                   transition={{
-                    duration: 1.5,
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeOut",
+                    repeatType: "loop",
+                    ease: "easeInOut",
                   }}
+                  style={{ backgroundColor: "rgba(255,255,255,0.3)" }}
                 />
+
                 <motion.div
-                  className="absolute w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200"
+                  className="absolute w-10 h-10 sm:w-12 sm:h-12 rounded-full"
                   animate={{
-                    scale: [1, 2],
-                    opacity: [0.6, 0],
+                    scale: [1, 2, 1],
+                    opacity: [0.6, 0, 0],
                   }}
                   transition={{
-                    duration: 1.5,
+                    duration: 2,
                     repeat: Infinity,
-                    ease: "easeOut",
-                    delay: 0.75,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                    delay: 1, // staggered ripple
                   }}
+                  style={{ backgroundColor: "rgba(255,255,255,0.3)" }}
                 />
+
                 {/* Icon Circle */}
-                <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-gray-100 z-10">
+                <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center bg-white z-10 shadow-md">
                   <img src={carMini} alt="Blinker" className="h-6 sm:h-10" />
                 </div>
               </div>
@@ -145,7 +151,7 @@ export default function WorkingProcess() {
               {/* Text */}
               <span className="text-white font-extrabold text-lg lg:text-2xl text-center sm:text-left leading-snug">
                 For bookings please call us on{" "}
-                <span className="font-extrabold">9999842400</span>
+                <span className="font-extrabold">+91 99107 24900</span>
               </span>
             </div>
 

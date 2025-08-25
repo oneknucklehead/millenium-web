@@ -149,8 +149,8 @@ export default function Footer() {
                 <div>
                   <p className="font-semibold">Millenium Headquarters</p>
                   <p className="text-sm text-gray-300">
-                    The Terminus, Suite No-512, 5th Floor, AA-1, NewTown,
-                    Kolkata, West Bengal.
+                    The Terminus , Suite No-502, 5th Floor, Action Area -1 New
+                    Town, Kolkata ,West Bengal 700156
                   </p>
                 </div>
               </div>

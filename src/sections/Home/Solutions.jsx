@@ -15,7 +15,7 @@ export default function Solutions() {
         "Our end-to-end network rollout services, including 4G/5G deployments, BTS installation, MW, IBS, Small Cell, UBR, and B2B enterprise work, ensure efficient project completion.",
     },
     {
-      title: "Network Optimization & Performance.",
+      title: "Network Optimization & Performance",
       img: img2,
       description:
         "Enhance your network's efficiency with our Radio Frequency Engineering, Drive Test, and Network Optimization services. We ensure your systems perform at their peak for superior user experience.",

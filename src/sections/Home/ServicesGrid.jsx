@@ -31,7 +31,7 @@ const services = [
     description:
       "Integrated facility management services including soft, security, and support nationwide.",
     image: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
-    cta: "/services/logistics",
+    cta: "/services/workspace",
   },
   {
     title: " Event Management",
