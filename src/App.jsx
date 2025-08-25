@@ -11,6 +11,7 @@ import Logistics from "./pages/Services/Service/Logistics";
 import Workspace from "./pages/Services/Service/Workspace";
 import Events from "./pages/Services/Service/Events";
 import ScrollToTop from "./components/ScrollToTop";
+import ContactPage from "./pages/Contact";
 
 function Page({ children }) {
   return (
@@ -35,6 +36,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/telecom" element={<Telecom />} />
         <Route path="/services/employee" element={<Employee />} />
