@@ -77,16 +77,23 @@ export default function HomeCarousel() {
           />
 
           {/* Text Content */}
-          <div className="absolute inset-0 flex items-end justify-end px-6 md:px-28 pb-20 md:pb-24 z-10">
-            <div className="text-white max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                {slides[currentSlide].heading}
-                <br />
-                <span className="text-primary">
-                  {slides[currentSlide].subheading}
-                </span>
-              </h2>
-            </div>
+          <div
+            className="
+    absolute 
+    top-[80%] left-10
+    md:top-[70%] md:left-[55%]
+    lg:top-[65%] lg:left-[60%]
+    max-w-[90%] md:max-w-xl 
+    text-white z-10
+  "
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl  xl:text-5xl font-bold leading-tight">
+              {slides[currentSlide].heading}
+              <br />
+              <span className="text-primary">
+                {slides[currentSlide].subheading}
+              </span>
+            </h2>
           </div>
         </motion.div>
       </AnimatePresence>

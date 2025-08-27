@@ -9,8 +9,10 @@ import img2 from "../../../assets/Images/services/Workspace/core2.webp";
 import imgHow from "../../../assets/Images/services/Workspace/how.webp";
 import ScrollSlide from "../../../components/ScrollSlide";
 
-import brand1 from "../../../assets/Images/services/EmpTransport/logos/3.webp";
-import brand2 from "../../../assets/Images/services/EmpTransport/logos/4.webp";
+import brand1 from "../../../assets/Images/services/Workspace/logos/3.webp";
+import brand2 from "../../../assets/Images/services/Workspace/logos/4.webp";
+// import brand3 from "../../../assets/Images/services/EmpTransport/logos/3.webp";
+// import brand4 from "../../../assets/Images/services/EmpTransport/logos/4.webp";
 import Ticker from "../../../components/Ticker";
 
 const steps = [
@@ -355,8 +357,8 @@ export default function Workspace() {
           ))}
         </div>
         <div className="flex gap-6 items-center justify-center my-8 flex-wrap">
-          <img src={brand1} className="w-36" alt="jio logo" />
-          <img src={brand2} className="w-36" alt="ericsson logo" />
+          <img src={brand1} className="w-64" alt="jio logo" />
+          <img src={brand2} className="w-64" alt="ericsson logo" />
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

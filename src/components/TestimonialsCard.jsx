@@ -13,11 +13,13 @@ const TestimonialsCard = ({ data }) => {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="Abhijeet Dasani"
-            className="w-10 h-10 rounded-full object-cover"
-          />
+          <div className="w-10 h-10 overflow-hidden">
+            <img
+              src={data.image}
+              alt="Abhijeet Dasani"
+              className="object-contain w-full h-full"
+            />
+          </div>
           <div>
             <h4 className="text-sm font-semibold text-gray-900">{data.name}</h4>
             <p className="text-xs text-gray-500">{data.role}</p>

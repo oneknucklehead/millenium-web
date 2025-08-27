@@ -126,7 +126,7 @@ export default function Footer() {
                     href="mailto:contact@milleniumglobal.com"
                     className="text-sm text-gray-300 hover:underline"
                   >
-                    contact@milleniumglobal.com
+                    connect@milleniumglobal.in
                   </a>
                 </div>
               </div>
@@ -173,7 +173,11 @@ export default function Footer() {
             Reserved.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="">
+            <a
+              href="https://www.linkedin.com/company/millenium-leisure-hospitality-services/about/"
+              target="_blank"
+              className=""
+            >
               <svg
                 width="24"
                 height="24"
@@ -187,7 +191,10 @@ export default function Footer() {
                 />
               </svg>
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/milleniumleisure/"
+              target="_blank"
+            >
               <svg
                 width="24"
                 height="24"
@@ -201,7 +208,7 @@ export default function Footer() {
                 />
               </svg>
             </a>
-            <a href="#">
+            {/* <a href="#">
               <svg
                 width="24"
                 height="24"
@@ -232,7 +239,7 @@ export default function Footer() {
                   fill="white"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </div>

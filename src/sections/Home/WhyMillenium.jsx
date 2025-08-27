@@ -52,16 +52,16 @@ export default function WhyMillenium() {
   return (
     <div className="w-full px-4 md:px-10 py-10 bg-white">
       {/* <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center"> */}
-      <Container>
-        <p className="text-primary text-xl font-semibold">
-          Why Businesses Love Millenium?
-        </p>
-      </Container>
-      <Container className="grid md:grid-cols-2 gap-10 my-4">
-        <h2 className="text-2xl md:text-4xl font-semibold text-black mb-4">
-          Empowering Businesses <br /> with Proven Solutions
-        </h2>
-        <p className="text-[#666666] font-medium text-sm">
+      <Container className="grid md:grid-cols-2 gap-10">
+        <div>
+          <p className="text-primary text-xl font-semibold mb-1">
+            Why Businesses Love Millenium?
+          </p>
+          <h2 className="text-2xl md:text-4xl font-semibold text-black mb-4">
+            Empowering Businesses <br /> with Proven Solutions
+          </h2>
+        </div>
+        <p className="text-[#666666] font-medium text-sm mb-4">
           Delivering pan‑India telecom infrastructure, automated employee
           transport, 3PL logistics and facility management with 10+ years of
           industry leadership, cutting‑edge technology and unwavering
@@ -83,7 +83,7 @@ export default function WhyMillenium() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="relative w-fit">
+          <div className="relative w-full max-w-xl">
             {/* Decorative diagonal stripes */}
             <div className="absolute -bottom-5 -right-5 w-full h-full bg-[repeating-linear-gradient(135deg,_#000_0px,_#000_2px,_transparent_2px,_transparent_6px)]" />
 
@@ -108,7 +108,7 @@ export default function WhyMillenium() {
           className="flex flex-col gap-4"
         >
           {/* Stat Cards */}
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-4">
             {cards.map((card, index) => (
               <motion.div
                 key={card.id}
@@ -136,7 +136,7 @@ export default function WhyMillenium() {
           <hr className="text-[#666666] bg-[#666666]" />
 
           {/* Features */}
-          <div className="grid sm:grid-cols-2 gap-4  my-6">
+          <div className="grid sm:grid-cols-2 gap-4  my-4">
             {features.map((feature, idx) => (
               <div className="flex items-center gap-4" key={idx}>
                 <span className=" bg-primary text-white  rounded-full p-1">

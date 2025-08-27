@@ -4,46 +4,53 @@ import { motion } from "framer-motion";
 import TestimonialCarousel from "../../components/TestimonialCarousel";
 import Container from "../../components/Container";
 
+import airtel from "../../assets/Images/testimonials/airtel.webp";
+import niit from "../../assets/Images/testimonials/niit.webp";
+import pwc from "../../assets/Images/testimonials/pwc.webp";
+import samsung from "../../assets/Images/testimonials/samsung.webp";
+import tcs from "../../assets/Images/testimonials/tcs.webp";
+import teleperformance from "../../assets/Images/testimonials/teleperformance.webp";
+
 const testimonialsData = [
   {
     name: "Ravi Mehta",
     role: "TCS",
-    image: "https://via.placeholder.com/40",
+    image: tcs,
     text: "Millenium’s employee transport fleet transformed our daily operations with punctual pickups, real-time tracking, and top-tier safety compliance.",
     rating: 4.9,
   },
   {
     name: "Ananya Roy",
     role: "Bharti Airtel",
-    image: "https://via.placeholder.com/40",
+    image: airtel,
     text: "Their telecom rollout team handled our 5G deployment in record time efficient, reliable, and seamlessly executed across multiple cities.",
     rating: 4.7,
   },
   {
     name: "Deepak Sharma",
     role: "Teleperformance",
-    image: "https://via.placeholder.com/40",
+    image: teleperformance,
     text: "Millenium’s night cab services are a blessing zero complaints, prompt support, and full compliance across all our BPO shifts.",
     rating: 5.0,
   },
   {
     name: "Neha Ghosh",
     role: "Samsung India",
-    image: "https://via.placeholder.com/40",
+    image: samsung,
     text: "Exceptional handling of telecom infrastructure upgrades BTS, IBS and MW setup done with clean execution and proactive communication throughout.",
     rating: 4.6,
   },
   {
     name: "Vinod Krishnan",
     role: "NIIT",
-    image: "https://via.placeholder.com/40",
+    image: niit,
     text: "Impressed by their green mobility push our employees love the EV commute, and we’ve reduced costs & emissions significantly.",
     rating: 4.8,
   },
   {
     name: "Shruti Desai",
     role: "PWC India",
-    image: "https://via.placeholder.com/40",
+    image: pwc,
     text: "Their MICE event services were professional, creative, and flawlessly organized great experience from logistics to on-site management.",
     rating: 4.7,
   },

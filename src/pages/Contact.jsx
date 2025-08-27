@@ -78,8 +78,10 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-              If you have any questions, feel free to get in touch with us via
-              phone, email, or by filling out the form below.
+              Whether you need telecom solutions, corporate transport,
+              logistics, workspace management, or event services, our team is
+              ready to deliver Pan-India, on-time, and with 100% compliance.
+              Reach out today to discuss your requirements.
             </p>
           </motion.div>
 
@@ -181,11 +183,14 @@ export default function ContactPage() {
               className="space-y-6"
             >
               <div className="bg-gray-50 shadow-md rounded-xl p-6">
-                <h2 className="text-lg font-bold mb-6 text-primary border-b pb-2">
+                <h2 className="text-lg font-bold text-primary border-b pb-2">
                   Contact Information
                 </h2>
 
                 {/* Two Column Layout */}
+                <p className="my-4 text-gray-600">
+                  For any Business Query & Assistance Please Contact:-
+                </p>
                 <div className="grid md:grid-cols-2 gap-8">
                   {/* Ajay Kumar Singh */}
                   <div className="space-y-3">
@@ -213,9 +218,7 @@ export default function ContactPage() {
                       <p className="font-semibold text-secondary">
                         Mr. Amar Kumar Singh
                       </p>
-                      <p className="text-sm text-gray-700">
-                        Business Sales Head
-                      </p>
+                      <p className="text-sm text-gray-700">Business Head</p>
                     </div>
 
                     <div className="flex items-center space-x-2">
@@ -289,15 +292,14 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      The Terminus, Suite No-5012, 5th Floor, New Town, Kolkata,
-                      WB 700156
+                      <p className="text-primary">Millenium Global</p>
+                      The Terminus, Suite No-502, 5th Floor, Action Area -1 New
+                      Town, Kolkata, West Bengal 700156
                     </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">
-                      033-35275525 / 66159302
-                    </p>
+                    <p className="text-gray-600 flex-1">033-35275525</p>
                   </div>
                 </div>
 
@@ -310,14 +312,13 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
+                      <p className="text-primary">Millenium Global</p>
                       UGF-97, Vyapar Kendra, Sushant Lok-1, Gurgaon, Haryana
                     </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">
-                      0124-4245001 / 114468
-                    </p>
+                    <p className="text-gray-600 flex-1">0124-4245001</p>
                   </div>
                 </div>
 
@@ -330,8 +331,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      Work Studio Coworking, Monal Tower, GS Road, Rukmini Gaon,
-                      Assam 781006
+                      <p className="text-primary">Millenium Global</p>
+                      House No. 12, Kalpataru Path, Near GNRC Hospital, Usha
+                      Nagar, Rukmini Gaon, Guwahati, Assam 781006
                     </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
@@ -349,7 +351,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      PN-115, Shri Karni Vatika, Gokulpura, Jaipur, Rajasthan
+                      <p className="text-primary">Millenium Global</p>
+                      PN-115, P.N 115 Shri Karni Vatika, Gokulpura, Jaipur,
+                      Rajasthan
                     </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
@@ -367,8 +371,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      1st Floor, Plot No-241/3601, Jayadev Vihar, Bhubaneswar,
-                      Odisha 751013
+                      <p className="text-primary">Millenium Global</p>
+                      1st Floor, Plot No-241/3601, Near Pal Heights, Jayadev
+                      Vihar, Bhubaneswar, Odisha 751013
                     </p>
                   </div>
                   <div className="flex items-center gap-2 mt-2">
