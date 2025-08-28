@@ -11,7 +11,9 @@ export default function HowWeWork({
   const leftRef = useRef(null);
   const scrollRef = useRef(null);
   const [leftHeight, setLeftHeight] = useState("auto");
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  const [isLargeScreen, setIsLargeScreen] = useState(
+    typeof window !== "undefined" ? window.innerWidth >= 768 : false
+  );
 
   // Mouse drag scroll states
   const [isDragging, setIsDragging] = useState(false);
@@ -72,11 +74,10 @@ export default function HowWeWork({
 
           {/* Right side */}
           <div
-            className={`relative w-full md:w-1/2`}
+            className="relative w-full md:w-1/2"
             style={{ height: isLargeScreen ? leftHeight : "auto" }}
           >
             {isLargeScreen ? (
-              // Scrollable for large screens
               <>
                 <div
                   ref={scrollRef}
@@ -84,10 +85,9 @@ export default function HowWeWork({
                   onMouseDown={handleMouseDown}
                   style={{
                     cursor: isDragging ? "grabbing" : "grab",
-                    paddingBottom: "33%", // prevents last card from hiding
                   }}
                 >
-                  <div className="space-y-6">
+                  <div className="space-y-6 pb-12">
                     {steps.map((item, index) => (
                       <motion.div
                         key={index}
@@ -103,8 +103,9 @@ export default function HowWeWork({
                   </div>
                 </div>
 
-                {/* Fixed gradient */}
-                <div className="pointer-events-none absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-secondary to-transparent" />
+                {/* Gradient overlays */}
+                {/* <div className="pointer-events-none absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-secondary to-transparent" /> */}
+                <div className="pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-secondary to-transparent" />
               </>
             ) : (
               // Normal stacked layout for small screens

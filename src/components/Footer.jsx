@@ -173,8 +173,8 @@ export default function Footer() {
             Reserved.
           </p>
           <div className="flex gap-4">
-            <a
-              href="https://www.linkedin.com/company/millenium-leisure-hospitality-services/about/"
+            {/* <a
+              href=""
               target="_blank"
               className=""
             >
@@ -190,9 +190,11 @@ export default function Footer() {
                   fill="white"
                 />
               </svg>
-            </a>
+            </a> */}
             <a
-              href="https://www.instagram.com/milleniumleisure/"
+              href="
+              https://www.linkedin.com/company/millenium-leisure-hospitality-services/about/
+              "
               target="_blank"
             >
               <svg
@@ -221,8 +223,11 @@ export default function Footer() {
                   fill="white"
                 />
               </svg>
-            </a>
-            <a href="#">
+            </a> */}
+            <a
+              href="https://www.instagram.com/milleniumleisure/"
+              target="_blank"
+            >
               <svg
                 width="24"
                 height="24"
@@ -239,7 +244,7 @@ export default function Footer() {
                   fill="white"
                 />
               </svg>
-            </a> */}
+            </a>
           </div>
         </motion.div>
       </div>
