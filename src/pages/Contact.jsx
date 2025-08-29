@@ -299,7 +299,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">033-35275525</p>
+                    <p className="text-gray-600 flex-1">
+                      033-35275525 / 9717200468
+                    </p>
                   </div>
                 </div>
 
@@ -318,7 +320,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">0124-4245001</p>
+                    <p className="text-gray-600 flex-1">
+                      0124-4245001 / 9717200468
+                    </p>
                   </div>
                 </div>
 
@@ -338,7 +342,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">7908309972</p>
+                    <p className="text-gray-600 flex-1">
+                      7908309972 / 9804104104
+                    </p>
                   </div>
                 </div>
 
@@ -358,7 +364,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">9717200468</p>
+                    <p className="text-gray-600 flex-1">
+                      9717200468 / 9804104104
+                    </p>
                   </div>
                 </div>
 
@@ -378,7 +386,9 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2 mt-2">
                     <Phone className="text-secondary w-5 h-5 shrink-0" />
-                    <p className="text-gray-600 flex-1">9717200468</p>
+                    <p className="text-gray-600 flex-1">
+                      9717200468 / 9804104104
+                    </p>
                   </div>
                 </div>
               </div>

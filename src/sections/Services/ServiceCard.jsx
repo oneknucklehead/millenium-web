@@ -47,7 +47,7 @@ const ServiceCard = ({
         <motion.img
           src={teamImg}
           alt="team"
-          className="relative z-10 rounded-xl shadow-lg border-4 border-white object-cover -mt-18 md:-mt-24"
+          className="h-48 md:h-96 w-full relative z-10 rounded-xl shadow-lg border-4 border-white object-cover -mt-18 md:-mt-24"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}

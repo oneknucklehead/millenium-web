@@ -14,21 +14,21 @@ const services = [
   {
     title: "Telecom Solutions",
     description:
-      "Comprehensive 4G/5G network rollout and optimization services across Pan‑India regions.",
+      "Comprehensive 4G/5G Network Rollout and Optimization services across Pan‑India regions.",
     image: telecom,
     cta: "/services/telecom",
   },
   {
     title: "Employee Transport",
     description:
-      "Automated EV‑powered employee transport solutions ensuring safety and efficiency nationwide.",
+      "Automated EV‑powered Employee Transport Solutions ensuring safety and efficiency nationwide.",
     image: employeeRransportation,
     cta: "/services/employee",
   },
   {
     title: "3PL Logistics",
     description:
-      "End‑to‑end 3PL logistics, first/last‑mile and reverse operations across Pan‑India hubs.",
+      "End‑to‑end 3PL Logistics, first/last‑mile and reverse operations across Pan‑India hubs.",
     image: logistics,
     cta: "/services/logistics",
   },
@@ -36,21 +36,21 @@ const services = [
   {
     title: "Facility Management",
     description:
-      "Integrated facility management services including soft, security, and support nationwide.",
+      "Integrated Facility Management services including soft, security, and support nationwide.",
     image: facility,
     cta: "/services/workspace",
   },
   {
     title: " Event Management",
     description:
-      "Full‑spectrum MICE and corporate event management services with turnkey execution.",
+      "Full‑spectrum MICE and Corporate Event Management services with turnkey execution.",
     image: events,
     cta: "/services/events",
   },
   {
     title: "HR Recruitment",
     description:
-      "Specialized telecom recruitment, RPO services driving talent acquisition across India.",
+      "Specialized Telecom Recruitment, RPO services driving talent acquisition across India.",
     image: hr,
     cta: "/services/workspace",
   },

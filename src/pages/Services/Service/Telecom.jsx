@@ -12,6 +12,8 @@ import brand1 from "../../../assets/Images/services/telecom/companies/1.png";
 import brand2 from "../../../assets/Images/services/telecom/companies/2.png";
 import brand3 from "../../../assets/Images/services/telecom/companies/3.png";
 import brand4 from "../../../assets/Images/services/telecom/companies/4.png";
+import brand5 from "../../../assets/Images/services/telecom/companies/5.webp";
+import brand6 from "../../../assets/Images/services/telecom/companies/6.webp";
 import Ticker from "../../../components/Ticker";
 const steps = [
   {
@@ -373,10 +375,12 @@ export default function Telecom() {
           ))}
         </div>
         <div className="flex gap-6 items-center justify-center my-8 flex-wrap">
-          <img src={brand1} alt="jio logo" />
-          <img src={brand2} alt="ericsson logo" />
-          <img src={brand3} alt="nokia logo" />
-          <img src={brand4} alt="samsung logo" />
+          <img src={brand1} className="w-24 " alt="jio logo" />
+          <img src={brand2} className="w-24 " alt="ericsson logo" />
+          <img src={brand3} className="w-24 " alt="nokia logo" />
+          <img src={brand4} className="w-24 " alt="samsung logo" />
+          <img src={brand5} className="w-24 " alt="BSNL logo" />
+          <img src={brand6} className="w-24 " alt="Vodafone logo" />
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

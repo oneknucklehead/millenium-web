@@ -13,6 +13,8 @@ import brand1 from "../../../assets/Images/services/EmpTransport/logos/3.webp";
 import brand2 from "../../../assets/Images/services/EmpTransport/logos/4.webp";
 import brand3 from "../../../assets/Images/services/EmpTransport/logos/5.webp";
 import brand4 from "../../../assets/Images/services/EmpTransport/logos/6.webp";
+import brand5 from "../../../assets/Images/services/EmpTransport/logos/1.webp";
+import brand6 from "../../../assets/Images/services/EmpTransport/logos/2.webp";
 import Ticker from "../../../components/Ticker";
 
 const steps = [
@@ -53,7 +55,7 @@ const data = [
   {
     title: "Special Purpose Vehicle:",
     description:
-      "India’s first mobile interview shuttle successfully deployed for Teleperformance’s CSR hiring drive in Northeast India.",
+      "India’s first mobile interview shuttle successfully deployed for Teleperformance’s CSR hiring driving Pan India.",
     bgColor: "bg-secondary",
     textColor: "text-white",
   },
@@ -366,10 +368,12 @@ export default function Employee() {
           ))}
         </div>
         <div className="flex gap-6 items-center justify-center my-8 flex-wrap">
-          <img src={brand1} className="w-36" alt="jio logo" />
-          <img src={brand2} className="w-36" alt="ericsson logo" />
-          <img src={brand3} className="w-36" alt="nokia logo" />
-          <img src={brand4} className="w-36" alt="samsung logo" />
+          <img src={brand1} className="w-36" alt="tcs logo" />
+          <img src={brand2} className="w-36" alt="tech mahindra logo" />
+          <img src={brand3} className="w-36" alt="pwc logo" />
+          <img src={brand4} className="w-36" alt="concentrix logo" />
+          <img src={brand5} className="w-36" alt="kpmg logo" />
+          <img src={brand6} className="w-36" alt="teleperformance logo" />
         </div>
         <motion.section
           className="bg-primary rounded-xl py-12 px-6 text-center text-white"

@@ -92,7 +92,7 @@ const missionVision = [
   {
     title: "Our Mission",
     description:
-      "To provide single-window Telecom Solutions and expand our specialized, customized Logistics Services into global markets, serving the industry with value-added Telecom Active & Passive Services across India.",
+      "To provide single-window corporate solutions across Telecom, Logistics, Employee Transport, Workspace Management, HR, and Events, delivering scalable, technology-driven, and value-added services to MNCs and enterprises across India and beyond.",
     bgColor: "bg-primary",
     titleUnderline: "bg-secondary",
     textColor: "text-white",
@@ -124,7 +124,7 @@ const cardData = [
   {
     title: "100% Compliance & Safety",
     description:
-      "Triband / pentaband swaps, upgrades and large scale installations with strict QA regimes.",
+      "From Telecom Rollouts (OHS, EMF & QA standards) to Employee Transport (safety, licensing & legal compliance), every project meets strict national and client regulations.",
     bg: "bg-primary",
     textColor: "text-white",
   },
@@ -160,9 +160,10 @@ const About = () => {
             Millenium Global, a division of the Millenium Group of Companies,
             was founded in 2014 in Gurgaon by a team of seasoned ICT
             professionals. What started as a vision to serve the growing demands
-            of the Indian telecom sector has today evolved into a pan-India
-            powerhouse for telecom infrastructure, employee transport,
-            logistics, HR recruitment, facility management, and event services.
+            of the Indian Telecom Sector has today evolved into a Pan-India
+            powerhouse for Telecom Infrastructure Services, Corporate Employee
+            Transport Solutions, Logistics Solutions, HR Recruitment, Facility
+            Management, and Event Management Services.
           </p>
 
           <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">

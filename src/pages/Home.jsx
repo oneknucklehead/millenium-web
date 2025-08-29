@@ -13,7 +13,7 @@ const services = [
   "Logistics Services",
   "Workspace Management",
   "HR Consultancy",
-  "Telecom Infrastructure",
+  "Telecom Infrastructure Services",
 ];
 const Home = () => {
   return (
