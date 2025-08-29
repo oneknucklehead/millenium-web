@@ -37,7 +37,10 @@ export default function ContactPage() {
       data.append("_template", "box");
       data.append("_subject", "New Contact Form Submission");
 
-      await axios.post("https://formsubmit.co/zohebahmed1542@gmail.com", data);
+      await axios.post(
+        "https://formsubmit.co/connect@milleniumglobal.in",
+        data
+      );
 
       setStatus("✅ Message Sent Successfully!");
       setFormData({
