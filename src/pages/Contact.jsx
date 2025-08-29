@@ -37,11 +37,11 @@ export default function ContactPage() {
       data.append("_template", "box");
       data.append("_subject", "New Contact Form Submission");
 
-      await axios.post(
+      const res = await axios.post(
         "https://formsubmit.co/connect@milleniumglobal.in",
         data
       );
-
+      // console.log(res.data);
       setStatus("✅ Message Sent Successfully!");
       setFormData({
         name: "",
@@ -295,7 +295,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      <p className="text-primary">Millenium Global</p>
+                      <span className="text-primary block">
+                        Millenium Global
+                      </span>
                       The Terminus, Suite No-502, 5th Floor, Action Area -1 New
                       Town, Kolkata, West Bengal 700156
                     </p>
@@ -317,7 +319,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      <p className="text-primary">Millenium Global</p>
+                      <span className="text-primary block">
+                        Millenium Global
+                      </span>
                       UGF-97, Vyapar Kendra, Sushant Lok-1, Gurgaon, Haryana
                     </p>
                   </div>
@@ -338,7 +342,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      <p className="text-primary">Millenium Global</p>
+                      <span className="text-primary block">
+                        Millenium Global
+                      </span>
                       House No. 12, Kalpataru Path, Near GNRC Hospital, Usha
                       Nagar, Rukmini Gaon, Guwahati, Assam 781006
                     </p>
@@ -360,7 +366,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      <p className="text-primary">Millenium Global</p>
+                      <span className="text-primary block">
+                        Millenium Global
+                      </span>
                       PN-115, P.N 115 Shri Karni Vatika, Gokulpura, Jaipur,
                       Rajasthan
                     </p>
@@ -382,7 +390,9 @@ export default function ContactPage() {
                   <div className="flex items-center gap-2 mt-2">
                     <MapPin className="text-secondary w-5 h-5 shrink-0" />
                     <p className="text-gray-600 flex-1">
-                      <p className="text-primary">Millenium Global</p>
+                      <span className="text-primary block">
+                        Millenium Global
+                      </span>
                       1st Floor, Plot No-241/3601, Near Pal Heights, Jayadev
                       Vihar, Bhubaneswar, Odisha 751013
                     </p>
