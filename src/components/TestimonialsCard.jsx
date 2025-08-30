@@ -21,8 +21,8 @@ const TestimonialsCard = ({ data }) => {
             />
           </div>
           <div>
-            <h4 className="text-sm font-semibold text-gray-900">{data.name}</h4>
-            <p className="text-xs text-gray-500">{data.role}</p>
+            <h4 className="text-lg font-semibold text-gray-900">{data.role}</h4>
+            {/* <p className="text-xs text-gray-500">{data.role}</p> */}
           </div>
         </div>
         <span className="bg-[#FFF9F5] p-2 rounded-full">

@@ -7,6 +7,6 @@ const repoName = "millenium-web";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${repoName}/`,
+  base: `/`,
   plugins: [react(), tailwindcss()],
 });
