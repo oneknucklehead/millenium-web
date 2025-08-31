@@ -14,7 +14,7 @@ export default function HowWeWork({
     typeof window !== "undefined" ? window.innerWidth >= 768 : false
   );
 
-  // Handle responsive detection
+  // Responsive detection
   useEffect(() => {
     const handleResize = () => setIsLargeScreen(window.innerWidth >= 768);
     window.addEventListener("resize", handleResize);
@@ -22,10 +22,24 @@ export default function HowWeWork({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Set dynamic height only on large screens
+  // Update height after content (including image) loads
   useEffect(() => {
     if (isLargeScreen && leftRef.current) {
-      setLeftHeight(leftRef.current.offsetHeight + "px");
+      const updateHeight = () =>
+        setLeftHeight(leftRef.current.offsetHeight + "px");
+
+      updateHeight();
+
+      // Recalculate when images load
+      const images = leftRef.current.querySelectorAll("img");
+      images.forEach((img) => img.addEventListener("load", updateHeight));
+
+      window.addEventListener("resize", updateHeight);
+
+      return () => {
+        images.forEach((img) => img.removeEventListener("load", updateHeight));
+        window.removeEventListener("resize", updateHeight);
+      };
     } else {
       setLeftHeight("auto");
     }
@@ -69,7 +83,7 @@ export default function HowWeWork({
                 </div>
               </div>
             ) : (
-              // Normal stacked layout for small screens
+              // Stacked layout on small screens
               <div className="space-y-6">
                 {steps.map((item, index) => (
                   <motion.div
