@@ -7,6 +7,7 @@ import img2 from "../../assets/Images/services/2.webp";
 import img3 from "../../assets/Images/services/3.webp";
 import img4 from "../../assets/Images/services/4.webp";
 import img5 from "../../assets/Images/services/5.webp";
+import { Helmet } from "react-helmet-async";
 
 const cardData = [
   {
@@ -48,51 +49,71 @@ const cardData = [
 
 const Services = () => {
   return (
-    <div className="pt-[80px]">
-      <Container className=" px-4">
-        <div className="py-4 flex flex-col justify-center items-center max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-semibold pt-8">
-            Our Services
-          </h1>
-          <p className="text-sm md:text-base text-gray-600 text-center my-4">
-            At Millenium Global, we offer a powerful suite of integrated
-            services tailored for enterprise efficiency, operational excellence,
-            and nationwide scalability. From telecom infrastructure development
-            to EV-powered employee transport, and from event management to
-            logistics and facility solutions, our offerings are built to support
-            growing businesses across India.
-            <br />
-            <br />
-            Headquartered in Gurgaon with operations in Mumbai, Kolkata,
-            Chennai, Guwahati, Jaipur, and more, we operate with full
-            compliance, smart automation, and industry-leading support. Each of
-            our five service verticals is backed by a decade of experience,
-            robust systems, and partnerships with top-tier clients like Jio,
-            Airtel, Samsung, TCS, PWC, and Teleperformance.
-            <br />
-            <br />
-            Explore how Millenium Global can power your business forward.
-          </p>
-        </div>
-      </Container>
-      <Container className=" px-4">
-        <div>
-          {cardData.map((service, index) => (
-            <div className="my-24">
-              <ServiceCard
-                key={index}
-                title={service.headline}
-                description={service.description}
-                teamImg={service.img}
-                reverse={index % 2 === 1} // Alternate layout
-                bg={index % 2 === 0 ? "primary" : "secondary"}
-                cta={service.cta}
-              />
-            </div>
-          ))}
-        </div>
-      </Container>
-    </div>
+    <>
+      <Helmet>
+        <title>Millenium Global India | Services</title>
+        <meta
+          name="description"
+          content="Explore Millenium Global’s wide range of services including events, logistics, telecom, workspace solutions, and more."
+        />
+        <meta property="og:title" content="Millenium Global India | Services" />
+        <meta
+          property="og:description"
+          content="Comprehensive solutions across events, logistics, telecom, and workspace."
+        />
+        <meta
+          property="og:image"
+          content="https://milleniumglobal.in/fb-og.png"
+        />
+        <meta property="og:url" content="https://milleniumglobal.in/services" />
+        <link rel="canonical" href="https://milleniumglobal.in/services" />
+      </Helmet>
+      <div className="pt-[80px]">
+        <Container className=" px-4">
+          <div className="py-4 flex flex-col justify-center items-center max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-4xl font-semibold pt-8">
+              Our Services
+            </h1>
+            <p className="text-sm md:text-base text-gray-600 text-center my-4">
+              At Millenium Global, we offer a powerful suite of integrated
+              services tailored for enterprise efficiency, operational
+              excellence, and nationwide scalability. From telecom
+              infrastructure development to EV-powered employee transport, and
+              from event management to logistics and facility solutions, our
+              offerings are built to support growing businesses across India.
+              <br />
+              <br />
+              Headquartered in Gurgaon with operations in Mumbai, Kolkata,
+              Chennai, Guwahati, Jaipur, and more, we operate with full
+              compliance, smart automation, and industry-leading support. Each
+              of our five service verticals is backed by a decade of experience,
+              robust systems, and partnerships with top-tier clients like Jio,
+              Airtel, Samsung, TCS, PWC, and Teleperformance.
+              <br />
+              <br />
+              Explore how Millenium Global can power your business forward.
+            </p>
+          </div>
+        </Container>
+        <Container className=" px-4">
+          <div>
+            {cardData.map((service, index) => (
+              <div className="my-24">
+                <ServiceCard
+                  key={index}
+                  title={service.headline}
+                  description={service.description}
+                  teamImg={service.img}
+                  reverse={index % 2 === 1} // Alternate layout
+                  bg={index % 2 === 0 ? "primary" : "secondary"}
+                  cta={service.cta}
+                />
+              </div>
+            ))}
+          </div>
+        </Container>
+      </div>
+    </>
   );
 };
 
