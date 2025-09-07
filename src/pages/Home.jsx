@@ -53,6 +53,41 @@ const Home = () => {
           name="twitter:image"
           content="https://milleniumglobal.in/twitter-og.png"
         />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Millenium Global",
+          "url": "https://milleniumglobal.in/",
+          "logo": "https://milleniumglobal.in/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9999842400",
+            "contactType": "Customer Service",
+            "areaServed": "IN",
+            "availableLanguage": "English"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/millenium-leisure-hospitality-services/",
+            "https://instagram.com/milleniumleisure/"
+          ]
+        }
+        `}</script>
+
+        {/* Website Schema (Google Sitelinks Search Box) */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://milleniumglobal.in/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://milleniumglobal.in/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        `}</script>
       </Helmet>
       <div className="overflow-hidden">
         <HomeCarousel />

@@ -122,6 +122,23 @@ export default function Events() {
           rel="canonical"
           href="https://milleniumglobal.in/services/events"
         />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Events & MICE Management Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+        `}</script>
       </Helmet>
       <section className="pt-[80px]">
         {/* SECTION 1 */}

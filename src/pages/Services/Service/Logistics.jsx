@@ -119,6 +119,23 @@ export default function Logistics() {
           rel="canonical"
           href="https://milleniumglobal.in/services/logistics"
         />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "3PL & Logistics Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+        `}</script>
       </Helmet>
       <section className="pt-[80px]">
         {/* SECTION 1 */}

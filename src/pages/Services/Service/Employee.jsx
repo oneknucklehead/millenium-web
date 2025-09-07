@@ -123,6 +123,25 @@ export default function Employee() {
           rel="canonical"
           href="https://milleniumglobal.in/services/employee"
         />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Employee Transport Services",
+          "serviceType": "Employee Services",
+          "description": "Staffing, onboarding, HR operations, payroll and compliance services.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+        `}</script>
       </Helmet>
       <section className="pt-[80px]">
         {/* SECTION 1 */}

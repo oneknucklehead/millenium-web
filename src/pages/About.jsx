@@ -156,6 +156,27 @@ const About = () => {
           content="https://milleniumglobal.in/fb-og.png"
         />
         <link rel="canonical" href="https://milleniumglobal.in/about" />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Millenium Global",
+          "url": "https://milleniumglobal.in/about",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/",
+            "logo": "https://milleniumglobal.in/logo.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "Customer Service",
+              "areaServed": "IN",
+              "availableLanguage": "English"
+            }
+          }
+        }
+        `}</script>
       </Helmet>
       <div className="pt-[80px] overflow-hidden">
         <Container className="px-4 py-12 ">

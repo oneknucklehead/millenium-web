@@ -85,6 +85,25 @@ export default function ContactPage() {
           content="https://milleniumglobal.in/fb-og.png"
         />
         <meta property="og:url" content="https://milleniumglobal.in/contact" />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91-9999842400",
+              "contactType": "Sales",
+              "areaServed": "IN",
+              "availableLanguage": "English"
+            }
+          }
+        }
+        `}</script>
       </Helmet>
       <div className="pt-[80px] overflow-hidden">
         <Container className="px-4 py-12 ">

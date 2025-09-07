@@ -120,6 +120,23 @@ export default function Workspace() {
           rel="canonical"
           href="https://milleniumglobal.in/services/workspace"
         />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Workspace & HR Solutions",
+          "provider": {
+            "@type": "Organization",
+            "name": "Millenium Global",
+            "url": "https://milleniumglobal.in/"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          }
+        }
+        `}</script>
       </Helmet>
       <section className="pt-[80px]">
         {/* SECTION 1 */}

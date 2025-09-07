@@ -67,6 +67,41 @@ const Services = () => {
         />
         <meta property="og:url" content="https://milleniumglobal.in/services" />
         <link rel="canonical" href="https://milleniumglobal.in/services" />
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Millenium Global Services",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "Employee Transport Services",
+              "url": "https://milleniumglobal.in/services/employee"
+            },
+            {
+              "@type": "Service",
+              "name": "Events & MICE Management Services",
+              "url": "https://milleniumglobal.in/services/events"
+            },
+            {
+              "@type": "Service",
+              "name": "3PL & Logistics Services",
+              "url": "https://milleniumglobal.in/services/logistics"
+            },
+            {
+              "@type": "Service",
+              "name": "Telecom Solutions",
+              "url": "https://milleniumglobal.in/services/telecom"
+            },
+            {
+              "@type": "Service",
+              "name": "Workspace & HR Solutions",
+              "url": "https://milleniumglobal.in/services/workspace"
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
       <div className="pt-[80px]">
         <Container className=" px-4">
